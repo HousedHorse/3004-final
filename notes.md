@@ -338,7 +338,7 @@
 
 ## Software development life cycle model
 
-- Software Development Life Cycle Process:
+- Software Life Cycle Process:
     - An approach to performing system development activities.
     - Goals and activities will remain the same between each different process
     - But the order and focus of each activity will be different.
@@ -346,21 +346,22 @@
 - Two Main Types:
     - Activity-Focused Processes
         - focus is on **development activities**.
+        - our main focus, in 3004.
     - Entity-Focused Processes
         - focus is on the **products** that are created.
-
 
 
 ### Agile
 
 - TODO: work on me!!
 
+
 ### Waterfall
 
 - Characteristics
     - Classic Development Process
     - Activity Centred
-    - Activities done in sequential order
+    - Activities done in *sequential order*
 
 - Simple Approach
 
@@ -377,7 +378,7 @@
 - Characteristics
     - Classic Development Process
     - Activity Centred
-    - Activities done in sequential order
+    - Activities done in *sequential order*
     - Link between design and implementation is explicitly denoted
 
 - More complex variation of the **Waterfall** Process
@@ -392,10 +393,28 @@
 - //TODO someone confirm if I've colour coded the diagram correctly...
 ![V-Model UML Diagram](figs/v-model-uml-dia.png)
 
+
 ### Spiral
 
-- TODO: work on me!!
+- Characteristics
+    - Classic Development Process
+    - Activity Centred
+    - Activities done *iteratively*
 
+- Goal: Address the frequent changes that occur in development
+
+- Strategy:
+    - Focus on addressing risks incrementally, in order of priority
+    - This is accomplished by adding risk management and prototyping to each cycle
+    - Each round/cycle has four phases:
+        - Requirements (determine objectives, constraints, alternatives)
+        - Risks (find and resolve risks)
+        - Development (develop and verify prototype)
+        - Planning (plan next round)
+
+#### Sprial Diagram
+- //TODO ADD DIAGRAM
+*![Spiral Diagram](figs/waterfall-uml-dia.png)*
 
 
 
