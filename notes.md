@@ -82,17 +82,21 @@
         - system architecture
         - subsystem decomposition
 1. Detailed Object Design
-    - FIXME: add work products
+    - work products?
+        - detailed object model
 1. Implementation
-    - FIXME: add work products
+    - work products?
+        - source code
 1. Testing
-    - FIXME: add work products
+    - work products?
+        - deliverable system
 1. Deployment / Maintenance
-    - FIXME: add work products
+    - work products?
+        - future versions of the deliverable system
 
 - where does the client's knowledge end and begin again?
     - ends right after analysis
-    - starts up again half way through testing (once we start testing final system)
+    - starts up again for system testing (after integration testing)
 
 
 
