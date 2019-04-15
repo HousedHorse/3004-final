@@ -139,20 +139,20 @@
 ### FR and NFR (FURPS+)
 
 - FURPS+
-    - F: functional
+    - F: Functional
         - if you can make a use case for it, it's functional
         - and vice versa
         - "what can the actors do with the system?"
-    - U: usability
+    - U: Usability
         - ease of use requirements
-    - R: reliability
+    - R: Reliability
         - recover from error
         - stability
         - security
-    - P: performance
+    - P: Performance
         - performance metrics
         - task X should be complete within Y seconds on a dataset of size Z
-    - S: supportability
+    - S: Supportability
         - future maintainability
         - what kinds of platforms/hardware can the system run on?
     - +: Implementation
