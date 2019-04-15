@@ -382,13 +382,14 @@
 
 - More complex variation of the **Waterfall** Process
 
-- Goal: Depict the Abstraction
+- Goal: Depict the level of abstraction for each activity
     - Higher levels deal with requirements
     - Middle levels deal with architecture (//TODO explain)
     - Low levels deal with details of software components
 
 #### V-Model UML Diagram
-- (layout has no meaning in UML, but is shown to demonstrate link between design and implementation)
+- (layout has no meaning in UML, but is shown to demonstrate link between similar activities at the same abstraction level)
+- //TODO someone confirm if I've colour coded the diagram correctly...
 ![V-Model UML Diagram](figs/v-model-uml-dia.png)
 
 ### Spiral
