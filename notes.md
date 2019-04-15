@@ -332,7 +332,15 @@
 
 ### Agile
 
-- TODO: work on me!!
+- emphasis on implementation phase
+- some requirement analysis
+- minimal design
+- testing concurrent with implementation
+
+#### Advantages?
+
+- shorter delivery times
+- faster response to change
 
 ### Waterfall
 
@@ -341,6 +349,11 @@
 - constantly verify at each step
 
 ![waterfall](figs/waterfall.png)
+
+#### Advantages?
+
+- never revisit an activity once completed
+- constant verification at each step
 
 ### V-model
 
@@ -352,11 +365,31 @@
     - shows abstraction levels
     - horizontal arrows depict information flow within abstraction level
 
-![v-model](v-model.png)
+![v-model](figs/v-model.png)
+
+#### Advantages?
+
+- depicts level of abstraction
+    - requirements
+    - architecture
+    - code
 
 ### Spiral
 
-- TODO: work on me!!
+- activity-centered
+- iterative execution of activities
+- address risks in order of priority
+- four phases
+    1. objectives, constraints, alternatives
+    1. risks
+    1. prototype
+    1. plan next round
+
+![spiral](figs/spiral.png)
+
+#### Advantages?
+
+- address frequent changes during development
 
 
 
