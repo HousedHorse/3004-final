@@ -133,6 +133,15 @@
 
 #### Use Case Diagrams
 
+- don't forget the system box
+- high level is pretty abstract
+- lower level is actually what's happening
+- "initiates" and "participates" for actors
+    - "initiate" species access control
+- "includes" and "extends" for use cases
+    - "extends" is for **errors only**, arrow goes opposite direction
+    - "includes" is for breaking down redundant/complex functionality
+
 ![overview of UC diagrams](figs/uc-dia-overview.png)
 
 #### Use Case Tables
