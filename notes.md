@@ -122,11 +122,12 @@
         - how it interacts with external systems
     - +: Operation
         - which users are allowed to do what
-        - TODO: finish me
+        - constraints on operation
     - +: Packaging
-        - TODO: finish me
+        - how the system should be delivered to the customer
     - +: Legal
-        - TODO: finish me
+        - any legal cosntraints on the system
+        - privacy laws, application-domain-specific laws, etc.
 - FURPS+ should be measurable, **reasonable**, specific -- don't state the obvious
     - not as simple as "the system should be easy to use"
 
