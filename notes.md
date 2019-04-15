@@ -394,7 +394,7 @@
 ![V-Model UML Diagram](figs/v-model-uml-dia.png)
 
 
-### Spiral
+### Spiral Model
 
 - Characteristics
     - Classic Development Process
@@ -412,7 +412,7 @@
         - Development (develop and verify prototype)
         - Planning (plan next round)
 
-#### Sprial Diagram
+#### Spiral Diagram
 - //TODO ADD DIAGRAM
 
 
