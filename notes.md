@@ -54,7 +54,7 @@
 ### Traceability -- what and why?
 
 - number entries in tables for traceability
-    - esp. FR/NFR and data fictionary
+    - esp. FR/NFR and data dictionary
 - helps with maintenance of design
 
 
