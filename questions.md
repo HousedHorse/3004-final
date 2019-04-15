@@ -43,7 +43,7 @@ This section contains a few system descriptions. For each description, do the fo
 
 ---
 
-1. Consider the myRecipes system. The system allows users to access recipes on their own local host and access recipes on peer hosts that are part of the system. The system supports three kinds of users: cooks, chefs, and assistant chefs.
+Consider the myRecipes system. The system allows users to access recipes on their own local host and access recipes on peer hosts that are part of the system. The system supports three kinds of users: cooks, chefs, and assistant chefs.
 
 Assistant Chefs can do the following:
 
