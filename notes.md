@@ -4,7 +4,17 @@
 
 ### What is it?
 
+- requirements analysis
+- building a software system to accomplish a task
+    - a software system is big and complex
+    - not just a dinky little program
+- reliable, modifiable process
+
 ### Why is it necessary?
+
+- huge systems and projects difficult to manage
+- we need a plan
+- reliability, modifiability
 
 
 
@@ -124,8 +134,6 @@
 
 ### Contracts
 
-### OCL (but I thought she said she was omitting this??)
-
 
 
 
@@ -163,22 +171,6 @@
 ### Integration testing (top-down, bottom-up, sandwich, modified sandwich, test stubs, test drivers)
 
 ### System testing (functional, performance)
-
-
-
-
-
-## Project management (I think she said this was omitted??)
-
-
-
-
-
-
-
-
-
-## Configuration management (I think she said this was omitted??)
 
 
 
