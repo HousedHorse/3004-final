@@ -146,7 +146,19 @@
 
 #### Use Case Tables
 
-- FIXME: fill me out
+- name
+- id (traceability of use case)
+- participating actors
+    - initiated by X
+    - Y participates
+- flow of events
+    - what happens from the actors' point of view?
+- entry condition
+    - what has to be true about the system to enter
+- exit condition
+    - what is true about the system when we exit
+- quality requirements and traceability of quality requirements
+    - NFRs and their numbers -> relevant to the use case
 
 ### Analysis
 
