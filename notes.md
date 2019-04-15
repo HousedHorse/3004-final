@@ -229,7 +229,7 @@
 
 
 
-## High level design
+## High level system design
 
 ### Design goals
 
