@@ -69,12 +69,26 @@
 ### Phases and work products of each
 
 1. Requirements Elicitation
+    - work products? the functional model!
+        - FURPS+ table
+        - use case diagram
+        - scenarios, use cases
 1. Analysis
+    - work products? the object and dynamic models!
+        - class diagrams
+        - activity / sequence / state machine diagrams
 1. High Level System Design
+    - work products?
+        - system architecture
+        - subsystem decomposition
 1. Detailed Object Design
+    - FIXME: add work products
 1. Implementation
+    - FIXME: add work products
 1. Testing
+    - FIXME: add work products
 1. Deployment / Maintenance
+    - FIXME: add work products
 
 - where does the client's knowledge end and begin again?
     - ends right after analysis
