@@ -349,7 +349,7 @@
     - Entity-Focused Processes
         - focus is on the **products** that are created.
 
-![Waterfall UML Diagram](figs/waterfall-uml-dia.png)
+
 
 ### Agile
 
@@ -357,19 +357,39 @@
 
 ### Waterfall
 
-- Activity Based Development Process
-- Each activity is done in sequential order
-    - Goal: Never repeat an activity once completed.
+- Characteristics
+    - Classic Development Process
+    - Activity Centred
+    - Activities done in sequential order
+
+- Simple Approach
+
+- Goal: Never repeat an activity once completed.
     - Strategy: Constant Verification at each step.
+    - Drawbacks: **//TODO**
 
-- TODO: add diagram.
+#### Waterfall UML Diagram
+![Waterfall UML Diagram](figs/waterfall-uml-dia.png)
 
 
-### V-model
+### V-Model
 
 - Characteristics
+    - Classic Development Process
     - Activity Centred
+    - Activities done in sequential order
+    - Link between design and implementation is explicitly denoted
 
+- More complex variation of the **Waterfall** Process
+
+- Goal: Depict the Abstraction
+    - Higher levels deal with requirements
+    - Middle levels deal with architecture (//TODO explain)
+    - Low levels deal with details of software components
+
+#### V-Model UML Diagram
+- (layout has no meaning in UML, but is shown to demonstrate link between design and implementation)
+![V-Model UML Diagram](figs/v-model-uml-dia.png)
 
 ### Spiral
 
