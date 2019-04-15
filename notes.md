@@ -134,7 +134,11 @@
 
 ### Why do it?
 
-- TODO: work on me!!
+- actors
+- scenarios
+- use cases and relationships
+- analysis objects
+- NFRs
 
 ### FR and NFR (FURPS+)
 
@@ -171,9 +175,14 @@
 - FURPS+ should be measurable, **reasonable**, specific -- don't state the obvious
     - not as simple as "the system should be easy to use"
 
-### Scenarios and use cases
+### Scenarios table
 
-- TODO: work on me!!
+- scenarios are instances of use cases
+- they help us find the actual use cases
+- what does the table look like?
+    - name
+    - actors (these get instantiated -> jimmy:staff, matilda:student, :RegistrarSystem, :FinanceSystem)
+    - flow of events
 
 ### UML use case diagrams
 
@@ -203,6 +212,12 @@
     - what is true about the system when we exit
 - quality requirements and traceability of quality requirements
     - NFRs and their numbers -> relevant to the use case
+
+### Initial analysis object glossary
+
+- look for common key words
+- these become initial objects
+- collect them in a glossary
 
 
 
