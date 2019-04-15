@@ -1,6 +1,8 @@
 # COMP3004 Final Exam Practice Question Answers
 
-## Multiple Choice
+## Multiple Choice (Concepts)
+
+1.
 
 
 
@@ -9,8 +11,9 @@
 
 
 
+## Short Answer (Concepts)
 
-## Short Answer
+1.
 
 
 
@@ -21,3 +24,17 @@
 
 
 ## Long Answer / Diagrams
+
+1.
+
+
+
+
+
+
+
+
+
+## Short Answer (Ethics)
+
+1.
