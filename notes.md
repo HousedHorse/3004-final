@@ -23,11 +23,39 @@
 
 ## Build models
 
+- functional model
+
+- dynamic model
+
+- object model
+
 ### Why do we need them?
+
+- get an idea of full system
+- requirements
+- clarify details
+- make sure client and design team on the same page
 
 ### What are they?
 
+- functional model
+    - FR, NFR (table, FURPS+)
+    - use cases (diagrams, tables)
+        - high level (don't forget the box!)
+        - detailed (includes and extends)
+- dynamic model
+    - state machine diagrams(s)
+    - activity diagram(s)
+    - sequence diagram(s)
+- object model
+    - class diagram(s)
+    - data dictionaries
+
 ### Traceability -- what and why?
+
+- number entries in tables for traceability
+    - esp. FR/NFR and data fictionary
+- helps with maintenance of design
 
 
 
