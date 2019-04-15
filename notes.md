@@ -122,8 +122,11 @@
         - how it interacts with external systems
     - +: Operation
         - which users are allowed to do what
+        - TODO: finish me
     - +: Packaging
+        - TODO: finish me
     - +: Legal
+        - TODO: finish me
 - FURPS+ should be measurable, **reasonable**, specific -- don't state the obvious
     - not as simple as "the system should be easy to use"
 

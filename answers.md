@@ -25,7 +25,17 @@
 
 ## Long Answer / Diagrams
 
-1.
+### myRecipes
+
+![fr table](figs/fr-table.png)
+
+
+
+
+
+
+
+
 
 
 
