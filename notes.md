@@ -68,6 +68,18 @@
 
 ### Phases and work products of each
 
+1. Requirements Elicitation
+1. Analysis
+1. High Level System Design
+1. Detailed Object Design
+1. Implementation
+1. Testing
+1. Deployment / Maintenance
+
+- where does the client's knowledge end and begin again?
+    - ends right after analysis
+    - starts up again half way through testing (once we start testing final system)
+
 ### Requirements elicitation
 
 ### Analysis
