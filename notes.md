@@ -94,96 +94,6 @@
     - ends right after analysis
     - starts up again half way through testing (once we start testing final system)
 
-### Requirements elicitation
-
-#### FURPS+ Tables
-
-- FURPS+
-    - F: functional
-        - if you can make a use case for it, it's functional
-        - and vice versa
-        - "what can the actors do with the system?"
-    - U: usability
-        - ease of use requirements
-    - R: reliability
-        - recover from error
-        - stability
-        - security
-    - P: performance
-        - performance metrics
-        - task X should be complete within Y seconds on a dataset of size Z
-    - S: supportability
-        - future maintainability
-        - what kinds of platforms/hardware can the system run on?
-    - +: Implementation
-        - implementation-specific requirements
-    - +: Interface
-        - how system interacts with actors (GUI, CLI, etc) -- boundary object requirements
-        - how it interacts with external systems
-    - +: Operation
-        - which users are allowed to do what
-        - constraints on operation
-    - +: Packaging
-        - how the system should be delivered to the customer
-    - +: Legal
-        - any legal cosntraints on the system
-        - privacy laws, application-domain-specific laws, etc.
-- FURPS+ should be measurable, **reasonable**, specific -- don't state the obvious
-    - not as simple as "the system should be easy to use"
-
-#### Use Case Diagrams
-
-- don't forget the system box
-- high level is pretty abstract
-- lower level is actually what's happening
-- "initiates" and "participates" for actors
-    - "initiate" species access control
-- "includes" and "extends" for use cases
-    - "extends" is for **errors only**, arrow goes opposite direction
-    - "includes" is for breaking down redundant/complex functionality
-
-![overview of UC diagrams](figs/uc-dia-overview.png)
-
-#### Use Case Tables
-
-- name
-- id (traceability of use case)
-- participating actors
-    - initiated by X
-    - Y participates
-- flow of events
-    - what happens from the actors' point of view?
-- entry condition
-    - what has to be true about the system to enter
-- exit condition
-    - what is true about the system when we exit
-- quality requirements and traceability of quality requirements
-    - NFRs and their numbers -> relevant to the use case
-
-### Analysis
-
-- TODO: work on me!!
-
-### High-level system design
-
-- TODO: work on me!!
-
-### Detailed object design
-
-- TODO: work on me!!
-
-### Implementation
-
-- TODO: work on me!!
-
-### Testing
-
-- TODO: work on me!!
-
-### Deployment and maintenance
-
-- TODO: work on me!!
-
 
 
 
@@ -224,7 +134,38 @@
 
 ### FR and NFR (FURPS+)
 
-- TODO: work on me!!
+- FURPS+
+    - F: functional
+        - if you can make a use case for it, it's functional
+        - and vice versa
+        - "what can the actors do with the system?"
+    - U: usability
+        - ease of use requirements
+    - R: reliability
+        - recover from error
+        - stability
+        - security
+    - P: performance
+        - performance metrics
+        - task X should be complete within Y seconds on a dataset of size Z
+    - S: supportability
+        - future maintainability
+        - what kinds of platforms/hardware can the system run on?
+    - +: Implementation
+        - implementation-specific requirements
+    - +: Interface
+        - how system interacts with actors (GUI, CLI, etc) -- boundary object requirements
+        - how it interacts with external systems
+    - +: Operation
+        - which users are allowed to do what
+        - constraints on operation
+    - +: Packaging
+        - how the system should be delivered to the customer
+    - +: Legal
+        - any legal cosntraints on the system
+        - privacy laws, application-domain-specific laws, etc.
+- FURPS+ should be measurable, **reasonable**, specific -- don't state the obvious
+    - not as simple as "the system should be easy to use"
 
 ### Scenarios and use cases
 
@@ -232,11 +173,33 @@
 
 ### UML use case diagrams
 
-- TODO: work on me!!
+- don't forget the system box
+- high level is pretty abstract
+- lower level is actually what's happening
+- "initiates" and "participates" for actors
+    - "initiate" species access control
+- "includes" and "extends" for use cases
+    - "extends" is for **errors only**, arrow goes opposite direction
+    - "includes" is for breaking down redundant/complex functionality
+
+![overview of UC diagrams](figs/uc-dia-overview.png)
 
 ### Use case tables
 
-- TODO: work on me!!
+- name
+- id (traceability of use case)
+- participating actors
+    - initiated by X
+    - Y participates
+- flow of events
+    - what happens from the actors' point of view?
+- entry condition
+    - what has to be true about the system to enter
+- exit condition
+    - what is true about the system when we exit
+- quality requirements and traceability of quality requirements
+    - NFRs and their numbers -> relevant to the use case
+
 
 
 
