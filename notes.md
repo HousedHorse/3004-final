@@ -414,7 +414,7 @@
 
 #### Sprial Diagram
 - //TODO ADD DIAGRAM
-*![Spiral Diagram](figs/waterfall-uml-dia.png)*
+
 
 
 
