@@ -98,7 +98,34 @@
 
 #### FURPS+ Tables
 
-- FIXME: fill me out
+- FURPS+
+    - F: functional
+        - if you can make a use case for it, it's functional
+        - and vice versa
+        - "what can the actors do with the system?"
+    - U: usability
+        - ease of use requirements
+    - R: reliability
+        - recover from error
+        - stability
+        - security
+    - P: performance
+        - performance metrics
+        - task X should be complete within Y seconds on a dataset of size Z
+    - S: supportability
+        - future maintainability
+        - what kinds of platforms/hardware can the system run on?
+    - +: Implementation
+        - implementation-specific requirements
+    - +: Interface
+        - how system interacts with actors (GUI, CLI, etc) -- boundary object requirements
+        - how it interacts with external systems
+    - +: Operation
+        - which users are allowed to do what
+    - +: Packaging
+    - +: Legal
+- FURPS+ should be measurable, **reasonable**, specific -- don't state the obvious
+    - not as simple as "the system should be easy to use"
 
 #### Use Case Diagrams
 
