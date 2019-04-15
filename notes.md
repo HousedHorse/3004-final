@@ -139,33 +139,33 @@
 ### FR and NFR (FURPS+)
 
 - FURPS+
-    - F: Functional
+    - F: **Functional**
         - if you can make a use case for it, it's functional
         - and vice versa
         - "what can the actors do with the system?"
-    - U: Usability
+    - U: **Usability**
         - ease of use requirements
-    - R: Reliability
+    - R: **Reliability**
         - recover from error
         - stability
         - security
-    - P: Performance
+    - P: **Performance**
         - performance metrics
         - task X should be complete within Y seconds on a dataset of size Z
-    - S: Supportability
+    - S: **Supportability**
         - future maintainability
         - what kinds of platforms/hardware can the system run on?
-    - +: Implementation
+    - +: **Implementation**
         - implementation-specific requirements
-    - +: Interface
+    - +: **Interface**
         - how system interacts with actors (GUI, CLI, etc) -- boundary object requirements
         - how it interacts with external systems
-    - +: Operation
+    - +: **Operation**
         - which users are allowed to do what
         - constraints on operation
-    - +: Packaging
+    - +: **Packaging**
         - how the system should be delivered to the customer
-    - +: Legal
+    - +: **Legal**
         - any legal cosntraints on the system
         - privacy laws, application-domain-specific laws, etc.
 - FURPS+ should be measurable, **reasonable**, specific -- don't state the obvious
