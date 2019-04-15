@@ -388,7 +388,7 @@
     - Low levels deal with details of software components
 
 #### V-Model UML Diagram
-- (layout has no meaning in UML, but is shown to demonstrate link between similar activities at the same abstraction level)
+- (horizontal flow demonstrates communication between activities at the same abstraction level)
 - //TODO someone confirm if I've colour coded the diagram correctly...
 ![V-Model UML Diagram](figs/v-model-uml-dia.png)
 
