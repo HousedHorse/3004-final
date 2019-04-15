@@ -96,7 +96,17 @@
 
 ### Requirements elicitation
 
-- TODO: work on me!!
+#### FURPS+ Tables
+
+- FIXME: fill me out
+
+#### Use Case Diagrams
+
+![overview of UC diagrams](figs/uc-dia-overview.png)
+
+#### Use Case Tables
+
+- FIXME: fill me out
 
 ### Analysis
 
