@@ -344,10 +344,10 @@
     - But the order and focus of each activity will be different.
 
 - Two Main Types:
-    - Activity-Focused Processes
-        focus is on **development activities**.
-    - Entity-Focused Processes
-        focus is on the **products** that are created.
+    - **Activity-Focused Processes**
+        - focus is on **development activities**.
+    - **Entity-Focused Processes**
+        - focus is on the **products** that are created.
 
 ### Agile
 
