@@ -338,17 +338,36 @@
 
 ## Software development life cycle model
 
+- Software Development Life Cycle Process:
+    - An approach to performing system development activities.
+    - Goals and activities will remain the same between each different process
+    - But the order and focus of each activity will be different.
+
+- Two Main Types:
+    - Activity-Focused Processes
+        focus is on **development activities**.
+    - Entity-Focused Processes
+        focus is on the **products** that are created.
+
 ### Agile
 
 - TODO: work on me!!
 
 ### Waterfall
 
-- TODO: work on me!!
+- Activity Based Development Process
+- Each activity is done in sequential order
+    - Goal: Never repeat an activity once completed.
+    - Strategy: Constant Verification at each step.
+
+- TODO: add diagram.
+
 
 ### V-model
 
-- TODO: work on me!!
+- Characteristics
+    - Activity Centred
+
 
 ### Spiral
 
