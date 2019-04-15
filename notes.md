@@ -96,17 +96,31 @@
 
 ### Requirements elicitation
 
+- TODO: work on me!!
+
 ### Analysis
+
+- TODO: work on me!!
 
 ### High-level system design
 
+- TODO: work on me!!
+
 ### Detailed object design
+
+- TODO: work on me!!
 
 ### Implementation
 
+- TODO: work on me!!
+
 ### Testing
 
+- TODO: work on me!!
+
 ### Deployment and maintenance
+
+- TODO: work on me!!
 
 
 
@@ -120,9 +134,15 @@
 
 ### Object model
 
+- TODO: work on me!!
+
 ### Dynamic model
 
+- TODO: work on me!!
+
 ### Functional model
+
+- TODO: work on me!!
 
 
 
@@ -138,13 +158,23 @@
 
 ### Why do it?
 
+- TODO: work on me!!
+
 ### FR and NFR (FURPS+)
+
+- TODO: work on me!!
 
 ### Scenarios and use cases
 
+- TODO: work on me!!
+
 ### UML use case diagrams
 
+- TODO: work on me!!
+
 ### Use case tables
+
+- TODO: work on me!!
 
 
 
@@ -157,7 +187,11 @@
 
 ### Object model
 
+- TODO: work on me!!
+
 ### Dynamic model
+
+- TODO: work on me!!
 
 
 
@@ -170,9 +204,15 @@
 
 ### Design goals
 
+- TODO: work on me!!
+
 ### Subsystem decomposition
 
+- TODO: work on me!!
+
 ### System design strategies
+
+- TODO: work on me!!
 
 
 
@@ -184,9 +224,15 @@
 
 ### Types of inheritance
 
+- TODO: work on me!!
+
 ### Liskov's principle
 
+- TODO: work on me!!
+
 ### Contracts
+
+- TODO: work on me!!
 
 
 
@@ -198,17 +244,31 @@
 
 ### Mapping objects to collections
 
+- TODO: work on me!!
+
 ### Model transformations
+
+- TODO: work on me!!
 
 ### Mapping associations to collections
 
+- TODO: work on me!!
+
 ### Mapping associations to storage
+
+- TODO: work on me!!
 
 ### Buried associations
 
+- TODO: work on me!!
+
 ### Association tables
 
+- TODO: work on me!!
+
 ### Vertical/horizontal mapping of inheritance to storage
+
+- TODO: work on me!!
 
 
 
@@ -220,11 +280,19 @@
 
 ### Blackbox vs whitebox
 
+- TODO: work on me!!
+
 ### Unit testing (path, equivalence, boundary, state, polymorphism)
+
+- TODO: work on me!!
 
 ### Integration testing (top-down, bottom-up, sandwich, modified sandwich, test stubs, test drivers)
 
+- TODO: work on me!!
+
 ### System testing (functional, performance)
+
+- TODO: work on me!!
 
 
 
@@ -235,11 +303,19 @@
 
 ### Agile
 
+- TODO: work on me!!
+
 ### Waterfall
+
+- TODO: work on me!!
 
 ### V-model
 
+- TODO: work on me!!
+
 ### Spiral
+
+- TODO: work on me!!
 
 
 
@@ -252,6 +328,12 @@
 
 ### Professionalism
 
+- TODO: work on me!!
+
 ### Code of ethics
 
+- TODO: work on me!!
+
 ### Process for making ethical decisions
+
+- TODO: work on me!!
