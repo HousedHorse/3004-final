@@ -336,11 +336,23 @@
 
 ### Waterfall
 
-- TODO: work on me!!
+- activity-centered
+- sequential, simple approach
+- constantly verify at each step
+
+![waterfall](figs/waterfall.png)
 
 ### V-model
 
-- TODO: work on me!!
+- variation of waterfall
+    - activity-centered
+    - sequential, simple approach
+    - constantly verify at each step
+- arranged as a V shape
+    - shows abstraction levels
+    - horizontal arrows depict information flow within abstraction level
+
+![v-model](v-model.png)
 
 ### Spiral
 
