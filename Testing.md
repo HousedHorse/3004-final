@@ -259,3 +259,98 @@
 ![polytest](figs/polytest1.png)
 ![polytest](figs/polytest2.png)
 ![polytest](figs/polytest3.png)
+
+###  Integration Testing
+  - small groups of components(components already unit tested)
+  - Approach
+    - unit testing verifies individual components
+    - tested components can be grouped and tested together
+    - more complex parts can be tested incrementally
+  - Ordering of component testing can optimize the process
+    - horizontal integration testing strategies
+      - components are integrated according to layers
+    - vertical integration testing strategies
+      - components integrated according to functionality
+
+### Horizontal integration testing strategies
+
+#### Big Bang Testing
+  - Approach
+    - unit test each component
+    - throw everything together
+  - Disadvantage
+    - difficult to determine:
+      - where the faults occur
+      - which components fail
+#### Bottom-Up Testing
+  - Approach
+    - unit test all the bottom layer components
+    - integrate with the next layer up
+    - repeat
+  - Characteristics
+    - requires that test drivers be implemented
+    - equires no test stubs
+![botuptest](figs/botuptest.png)
+
+#### Top-Down Testing
+  - Approach
+    - unit test all the top layer components
+    - integrate with the next layer down
+    - repeat
+  - Characteristics
+    - requires that test stubs be implemented
+    - requires no test drivers
+![topdown](figs/topdowntest.png)
+
+#### Bottom-Up vs. Top-Down Testing
+  - Bottom-up testing
+    - advantage: finds interface faults more easily
+    - disadvantage: UI subsystems are tested last 
+  - Top-down testing
+    - advantage: starts with UI testing
+    - disadvantage: large number of test stubs must be developed
+    
+#### Sandwich Testing
+  - Approach
+    - combines top-down and bottom-up
+    - system is divided into:
+      - target layer
+      - layer above target layer
+      - layer below target layer
+    - top-down and bottom-up testing conducted in parallel
+    - top-down: top layer is tested incrementally with target components
+    - bottom-up: bottom layer is tested incrementally with target components
+  - Characteristics
+    - requires no test drivers and no test stubs
+    - disadvantage: target components are not unit tested
+![sandwich](figs/sandwich.png)
+
+#### Modified Sandwich Testing
+  -Approach
+    - similar to sandwich testing
+    - test the three layers individually before testing together
+    - first step: individual layer tests
+      - top layer tested, with stubs for target layer
+      - target layer tested, with drivers for top layer and stubs for bottom
+      - bottom layer tested, with drivers for target layer
+    - second step: combined layer tests
+      - top layer accesses target layer
+        - replace the test drivers with top layer components
+      - bottom layer is accessed by target layer
+        - replace the test stubs with bottom layer components
+  - Characteristics
+    - advantage: parallelism
+    - disadvantage: requires additional test drivers and stubs
+![modsandwich](figs/modsandwich.png)
+
+#### Vertical Integration
+  - Vertical vs. horizontal integration testing strategies
+    - in horizontal integration:
+      - components are integrated in layers, based on subsystem decomp
+    - in vertical integration:
+      - all components for a given use case are fully implemented
+      - these components are tested together
+      - similar to prototyping, but prototypes are not releasable
+      - disadvantages:
+        - system evolves more incrementally
+        - design is more subject to change
