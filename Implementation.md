@@ -196,3 +196,4 @@ properties
     - implemented as separate object with binary associations
     - each binary association mapped to set of reference attributes
 ![ass classes](figs/assclasses.png)
+![ass classes](figs/assclas.png)
