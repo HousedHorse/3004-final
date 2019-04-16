@@ -17,8 +17,15 @@
 
 ## Short Answer (Concepts)
 
-1.
-
+1. Describe each of the FURPS+ requirement categories and why each one is important to the requirements elicitation process.
+1. Give an overview of the three models of the requirements elicitation/analysis process and list the work products encompassed by each (diagrams and tables).
+1. Jack wants to save on printer ink and skip writing numbers for the functional and non-functional requirements in his document. Explain to Jack why this is probably not a smart idea.
+1. A browser displays alternate text before an image finished loading. What design pattern is being employed here? Draw a small class diagram to demonstrate.
+1. Karen is confused about the difference between the "Facade" and "Bridge" design patterns. Explain the difference to Karen.
+1. What is the difference between a scenario and use case? During the requirements elicitation process, which of the two would you try to come up with first and why?
+1. Explain the difference between the "includes" relationship and the "extends" relationship in UML use case diagrams. Are the two interchangeable? Why or why not?
+1. What is primary difference between composition and shared aggregation? Would it be possible for two classes to be composed of the same object? Would it be possible for one class to be composed of two or more objects? Why or why not?
+1. State machine diagrams and activity diagrams may appear similar at first glance. What is the primary difference between the two?
 
 
 
