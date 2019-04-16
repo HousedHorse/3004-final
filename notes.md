@@ -647,11 +647,47 @@
 
 ### Blackbox vs whitebox
 
-- TODO: work on me!!
+- blackbox
+    - test output vs expected output given input
+- whitebox
+    - test inner workings of a function
+- we need **both**
 
 ### Unit testing (path, equivalence, boundary, state, polymorphism)
 
-- TODO: work on me!!
+#### Path
+
+- whitebox technique
+- test all paths through the code
+
+![pathtest](figs/pathtest1.png)
+![pathtest](figs/pathtest2.png)
+![pathtest](figs/pathtest3.png)
+
+#### Equivalence
+
+- blackbox technique
+- separate input between equivalence classes
+    - all input belongs to equivalence classes
+    - no two equivalence classes share input
+- test only one member of each equivalence class
+
+![equivtest](figs/equivtest.png)
+
+#### Boundary
+
+#### State
+
+#### Polymorphism
+
+- whitebox technique
+- test with a typecast of each
+- invoke operation on all subclasses
+- flow graph
+
+![polytest](figs/polytest1.png)
+![polytest](figs/polytest2.png)
+![polytest](figs/polytest3.png)
 
 ### Integration testing (top-down, bottom-up, sandwich, modified sandwich, test stubs, test drivers)
 
