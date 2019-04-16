@@ -7,54 +7,47 @@
     - B) Huge systems and projects are difficult to manage
     - C) It isn't necessary
     - D) It's an easy way for people to work together
-
-2. What is not a build model?
+1. What is not a build model?
     - A) Functional model
     - B) Dynamic model
     - C) Static model
     - D) Object model
-
-3. What is not an example of a dynamic model?
+1. What is not an example of a dynamic model?
     - A) Use case diagrams
     - B) State machine diagrams
     - C) Activity diagrams
     - D) Sequence diagrams
-
-4. Why is traceability important?
+1. Why is traceability important?
     - A) It's easy to trace back the design of the code
     - B) It helps with maintenance of design
     - C) It helps the developer keep on track
     - D) It helps with the users to keep on track
-
-5. Where does the client's knowledge end?
+1. Where does the client's knowledge end?
     - A) It ends after implementation
     - B) It ends after testing
     - C) It ends after analysis
     - D) It ends after requirement and elicitation
-
-6. What is not a original design pattern?
+1. What is not a original design pattern?
     - A) Creational
     - B) Structural
     - C) Behavioral
     - D) Architectural
-
-7. What is not part of the behavioral design patterns
+1. What is not part of the behavioral design patterns
     - A) Command
     - B) Strategy
     - C) Facade
     - D) Observer
-
-8. What is not a design goal?
+1. What is not a design goal?
     - A) Performance
     - B) Supportability
     - C) Cost
     - D) Maintenance
-
-9. What are the functions of the ball and socket in a component diagram?
+1. What are the functions of the ball and socket in a component diagram?
     - A) The ball provides the service and the socket uses the service
     - B) The ball uses the service and the socket provides the service
     - C) The ball stores the service and the socket initializes the service
     - D) The ball provides the service and the socket initializes the service
+
 ## Short Answer (Concepts)
 
 1. Describe each of the FURPS+ requirement categories and why each one is important to the requirements elicitation process.
