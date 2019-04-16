@@ -8,7 +8,7 @@ Also, [some questions](questions.md) and [answers](answers.md).
 
 ## What to Contribute
 
-**IMPORTANT:** I want to get the notes done **before** we write questions. Please pick some sub-sub sections (the three hashtags) from [notes.md](notes.md) and fill those out as best as you can. Once everything in the notes is done, we can write questions based on the notes.
+We just need questions and answers now :) 
 
 ## How to Contribute
 
