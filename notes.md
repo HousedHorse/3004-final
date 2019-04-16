@@ -759,13 +759,12 @@
 - whitebox technique
 - test all paths through the code
 
-![pathtest](figs/pathtest1.png)
 ![pathtest](figs/pathtest2.png)
 ![pathtest](figs/pathtest3.png)
 
 #### Equivalence
 
-- blackbox technique
+- blackbox
 - separate input between equivalence classes
     - all input belongs to equivalence classes
     - no two equivalence classes share input
@@ -775,6 +774,7 @@
 
 #### Boundary
 
+- blackbox
 - special case of equivalence
 - focus only on testing at boundary of equivalence classes
 
@@ -782,6 +782,7 @@
 
 #### State-based
 
+- whitebox
 - resulting state vs expected state
 - class-based
 - similar to equivalence testing for states in the state machine diagram
@@ -790,13 +791,12 @@
 
 #### Polymorphism
 
-- whitebox technique
+- blackbox (I think?)
 - test with a typecast of each
 - invoke operation on all subclasses
 - flow graph
 
 ![polytest](figs/polytest1.png)
-![polytest](figs/polytest2.png)
 ![polytest](figs/polytest3.png)
 
 ### Integration testing (top-down, bottom-up, sandwich, modified sandwich, test stubs, test drivers)
