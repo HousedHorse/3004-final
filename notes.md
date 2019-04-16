@@ -746,6 +746,8 @@
 
 ### Unit testing (path, equivalence, boundary, state, polymorphism)
 
+- individual components
+
 #### Path
 
 - whitebox technique
@@ -793,11 +795,67 @@
 
 ### Integration testing (top-down, bottom-up, sandwich, modified sandwich, test stubs, test drivers)
 
-- TODO: work on me!!
+- small groups of components
+- already unit tested
+- horizontal
+    - test according to layers of subsystem decomp
+    - all the techniques shown below are horizontal
+- vertical
+    - test all functionality at once
+
+#### Top-down
+
+- needs stubs, not drivers
+- test top level subsystems
+- then, integrate with lower subsystems and test them all combined
+- repeat
+
+#### Bottom-up
+
+- needs drivers, not stubs
+- test bottom level subsystems
+- then, integrate with level above and test them all combined
+- repeat
+
+#### Sandwich
+
+- combine bottom-up and top-down
+- take three layers
+    - target
+    - layer above
+    - layer below
+- run top down from layer above
+- run bottom-up from layer below
+- target components are not unit tested
+
+#### Modified sandwich
+
+- similar to sandwich
+- test *all three* layers individually
+- then test them all together
+- requires more test drivers and stubs
+
+#### Test stubs
+
+- simulate the component called by the test component
+
+#### Test drivers
+
+- simulate part of the system that calls the functions
 
 ### System testing (functional, performance)
 
-- TODO: work on me!!
+#### Functional
+
+- blackbox
+- test functionality
+- derive test cases from requirements analysis
+
+#### Performance
+
+- blackbox
+- test performance
+- derive test cases from requirements analysis and system design document
 
 
 
