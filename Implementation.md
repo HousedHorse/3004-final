@@ -196,4 +196,75 @@ properties
     - implemented as separate object with binary associations
     - each binary association mapped to set of reference attributes
 ![ass classes](figs/assclasses.png)
-![ass classes](figs/assclas.png)
+
+## Mapping to Storage
+
+### Relational Database Concepts
+  - Schema
+    - description of data
+    - set of attributes stored for each object
+    - also known as meta-model for data
+  - Primary key
+    - set of attributes whose values uniquely identify a data record
+    - used to refer unambiguously to a specific data record
+  - Foreign key
+    - attribute that references a primary key in another table
+    - links a data record in one table to more records in another table
+![relationaldb](figs/relationaldb.png)
+
+### Mapping Classes and Attributes
+  - Correspondences between object model and schema
+    - class: table
+    - attribute: column
+    - instance: row
+  - Match same names in object model and schema
+    - provides traceability
+  -  Mapping attribute types
+    - some constraints may have to be added to the object model(ex: max string length)
+  - Primary key
+    - choose a set of class attributes
+      - problem if key values change
+      - problem if application domain changes
+    - add a unique identifier
+      - more robust
+![mapclassattr](figs/mapclassattr.png)
+
+### Mapping Associations
+  - Buried association
+    - used to implement one-to-one and one-to-many associations
+    - one-to-one: include foreign key of destination object in record of source object (and vice-versa for bidirectional association)
+    - one-to-many: include foreign key of source object (“one” side) in records of destination objects (“many” side)
+![buriedass](figs/buriedass.png)
+  - Association table
+    - used to implement many-to-many associations
+    - create a new two-column table with foreign keys for both classes in the association
+    - each row corresponds to one link
+    - can be used for one-to-one and one-to-many
+      - increases the number of tables
+      - increases the time required to traverse associations
+![asstable](figs/asstable.png)
+
+### Mapping Inheritance Relationships
+  - Vertical mapping
+    - superclass and subclass each have their own table
+    - superclass table:
+      - contains superclass attributes
+      - includes additional attribute for name of record’s actual subclass
+    - subclass table:
+      - contains subclass attributes
+      - shares same key as superclass table
+    - access to one object involves multiple table retrievals
+![vertmap](figs/vertmap.png)
+  - Horizontal mapping
+    - only the subclass has a table
+    - includes attributes from superclass and subclass
+    - access to one object involves a single table retrieval
+![hormap](figs/whoremap.png)
+  - Trade-offs
+    - vertical mapping
+      - adds to access time with multiple table retrievals
+      - facilitates modifiability, e.g. when adding attributes to superclass
+    - horizontal mapping
+      - duplicates superclass columns for each subclass
+      - schema modifications are more complex
+      - queries are faster, especially with deep inheritance
