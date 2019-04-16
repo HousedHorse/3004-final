@@ -574,7 +574,7 @@
     - preferable to implementation inheritance
         - special case: private inheritance in C++
 
-![delegation](delegation.png)
+![delegation](figs/delegation.png)
 
 ### Liskov's principle
 

@@ -50,6 +50,11 @@
     - C) Cost
     - D) Mainteance
 
+9. What are the functions of the ball and socket in a component diagram?
+    - A) The ball provides the service and the socket uses the service
+    - B) The ball uses the service and the socket provides the service
+    - C) The ball stores the service and the socket intializes the service
+    - D) The ball provides the service and the socket initializes the service
 ## Short Answer (Concepts)
 
 1. Describe each of the FURPS+ requirement categories and why each one is important to the requirements elicitation process.
