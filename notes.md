@@ -136,9 +136,10 @@
 
 - actors
 - scenarios
-- use cases and relationships
+- use cases and relationships (and FRs)
 - analysis objects
 - NFRs
+- "a better understanding of what the client wants"
 
 ### FR and NFR (FURPS+)
 
@@ -231,11 +232,77 @@
 
 ### Object model
 
-- TODO: work on me!!
+- objects come from FRs, use cases
+- entity, boundary, control
+- work products?
+    - class diagrams
+    - data dictionary
+
+#### Aggregation
+
+- how does it work?
+    - diamond on one side, arrow on the other (but we omit the arrow)
+    - cardinality -> 1..\* or 0..\* or \* or 1 etc.
+- **shared** (white diamond)
+    - other classes can aggregate what we are aggregating
+- **composition** (black diamond)
+    - we are "composed" of what we are aggregating
+    - it can't exist anywhere else in the program
+- **bi-directional**
+    - has-a relationship in two directions
+    - no arrows or diamonds
+
+#### Inheritance
+
+- is-a relationship
+- this is pretty simple
+
+#### Data dictionary
+
+- entity objects
+    - object name
+    - attributes and associations
+    - definition
+- boundary objects
+    - object name (high level -> always "option" or "reply" or "request" or "notification")
+    - definition
+- control objects (one per use case, or one per actor per use case)
+    - object name
+    - definition
 
 ### Dynamic model
 
-- TODO: work on me!!
+- dynamic model comes from use cases
+- work products?
+    - sequence diagrams
+    - activity diagrams
+    - state machine diagrams
+
+#### Sequence diagrams
+
+- actor and boundary lifeline -> lasts forever
+    - very rarely this will make sense for something else
+    - for example, persistent storage that is not external to the system
+- pretty much everything else gets created and has a lifeline that ends in an X
+    - even the control objects
+1. actor selects option
+1. option creates control object
+1. control object takes over
+1. control object creates request
+1. request sends
+1. control object creates reply
+1. receiver object or actor sends the reply
+1. control creates notification object
+1. notification object notifies user
+
+#### Activity diagrams
+
+- TODO: add me
+
+#### State machine diagrams
+
+- TODO: add me
+
 
 
 
