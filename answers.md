@@ -2,7 +2,17 @@
 
 ## Multiple Choice (Concepts)
 
-1.
+FIXME: answers up to 9 are done; need to do the rest
+
+1. B (and probably D as well)
+1. C
+1. A
+1. B
+1. C
+1. D
+1. C
+1. B
+1. A
 
 
 
