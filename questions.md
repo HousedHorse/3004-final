@@ -20,25 +20,25 @@
     - C) Activity diagrams
     - D) Sequence diagrams
 
-4. Why is traceability important?  
-    - A) It's easy to trace back the design of the code 
+4. Why is traceability important?
+    - A) It's easy to trace back the design of the code
     - B) It helps with maintenance of design
-    - C) It helps the developer keep on track 
-    - D) It helps with the users to keep on track 
+    - C) It helps the developer keep on track
+    - D) It helps with the users to keep on track
 
-5. Where does the client's knowledge end?  
-    - A) It ends after implementation 
+5. Where does the client's knowledge end?
+    - A) It ends after implementation
     - B) It ends after testing
     - C) It ends after analysis
-    - D) It ends after requirement and elicitation 
+    - D) It ends after requirement and elicitation
 
 6. What is not a original design pattern?
     - A) Creational
     - B) Structural
-    - C) Behavioural
+    - C) Behavioral
     - D) Architectural
 
-7. What is not part of the behavioural design patterns
+7. What is not part of the behavioral design patterns
     - A) Command
     - B) Strategy
     - C) Facade
@@ -46,14 +46,14 @@
 
 8. What is not a design goal?
     - A) Performance
-    - B) Supportibility
+    - B) Supportability
     - C) Cost
-    - D) Mainteance
+    - D) Maintenance
 
 9. What are the functions of the ball and socket in a component diagram?
     - A) The ball provides the service and the socket uses the service
     - B) The ball uses the service and the socket provides the service
-    - C) The ball stores the service and the socket intializes the service
+    - C) The ball stores the service and the socket initializes the service
     - D) The ball provides the service and the socket initializes the service
 ## Short Answer (Concepts)
 
