@@ -26,6 +26,17 @@
 1. Explain the difference between the "includes" relationship and the "extends" relationship in UML use case diagrams. Are the two interchangeable? Why or why not?
 1. What is primary difference between composition and shared aggregation? Would it be possible for two classes to be composed of the same object? Would it be possible for one class to be composed of two or more objects? Why or why not?
 1. State machine diagrams and activity diagrams may appear similar at first glance. What is the primary difference between the two?
+1. You want to modernize the old UNIX `bc` program to turn it into a GUI calculator. Assume that it would be more efficient to use the old `bc` code than to rewrite the calculator logic from scratch. What kind of design pattern might be beneficial here and why?
+1. Draw a UML state machine diagram for an application that allows you to write test questions and add them to a remote test bank.
+1. Suppose you have a subsystem with three classes that all share similar functionality. Unfortunately, this subsystem has very low cohesion, as none of the classes use each other's services. What transformation might you apply to your model to fix this problem?
+1. What is the difference between implementation and specification inheritance? Give an example of when you might use each?
+1. Why is Liskov's principle important for polymorphism as we know it?
+1. Suppose you have two classes (A and B). What are the four types of possible associations between A and B and how would you map each one to source code from a UML class diagram?
+1. What are the two ways of optimizing associations between classes? List the advantages and/or disadvantages of each in as much detail as possible.
+1. Explain the difference between model transformation and refactoring using an example.
+1. Explain the difference between reverse engineering and forward engineering using an example.
+1. Consider relational databases and OO databases. List one advantage and one disadvantage of each in the context of implementing a C++ program that needs to interface with a database.
+1. What is the difference between vertical and horizontal mapping in the context of mapping inheritance relationships to storage? Explain the trade-off between the two.
 
 
 
