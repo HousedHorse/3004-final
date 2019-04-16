@@ -562,25 +562,17 @@
 - unidirectional one-to-one
     - mapped as reference within source object to destination
 
-![uni one-one](figs/unioneone.png)
-
 - bidirectional one-to-one
     - a reference within source object to destination object
     - a reference within destination object to source object
-
-![bi one-one](figs/bioneone.png)
 
 - one-to-many
     - within source object, collection of references to destination
     - may be unidirectional or bidirectional
 
-![one many](figs/onemany.png)
-
 - many-to-many
     - within each source object, collection of references to destination
     - within each destination object, collection of references to source
-
-![many many mengchi](figs/manymany.png)
 
 #### Optimizing associations
 
