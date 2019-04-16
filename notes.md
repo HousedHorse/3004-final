@@ -538,21 +538,138 @@
 
 ### Types of inheritance
 
-- TODO: work on me!!
+- Impact of inheritance on coupling
+    - decouples client classes using superclass from subclasses
+    - introduces strong coupling between superclass and subclasses
+
+#### Specification Inheritance
+
+- What is it?
+    - use of inheritance to classify concepts into type hierarchies
+    - “is-a” relationship between generalized and specialized classes
+    - this is the “classic” kind of inheritance
+
+#### Implementation Inheritance
+
+- What is it?
+    - **not** an "is-a" relationship
+    - use of inheritance purely for purposes of code reuse
+    - superclass functionality is reused by:
+        - subclassing
+        - refining behaviour
+    - quick and dirty way to reuse operations        
+        - usually results in unintended consequences
+        - you get more than you bargained for
+    - not an intuitive use of inheritance
+- ex: container class
+
+#### Delegation
+
+- What is it?
+    - an alternative to implementation inheritance
+    - an operation resends a message to another class
+        - also called “pass-the-buck”, “double dispatching”
+- Characteristics
+    - makes explicit the dependencies between a reused class and a new one
+    - preferable to implementation inheritance
+        - special case: private inheritance in C++
+
+![delegation](delegation.png)
 
 ### Liskov's principle
 
-- TODO: work on me!!
+- What is this principle?
+    - assume T is a superclass and S is a subclass of T
+    - “if an object of type S can be substituted in all places where an 
+    object of type T is expected, then S is a subtype of T”
+    - consequences:
+        - an operation on T can be called on instances of S, without 
+        knowing that it is called on a subclass instance
+        - client classes using operations on T don’t have to change when 
+        new subclasses of T are added
+- Strict inheritance
+    - when all inheritance associations are specification inheritance
+
+### The Need for Code Reuse
+- Frequent sources of change during development
+    - new vendor or new technology
+        - vendors go out of business, components become unavailable
+    - new implementation
+        - system performance is difficult to predict at the design stage
+    - new views
+        - usability problems translate into additional views on the same 
+        data
+    - new complexity of application domain
+        - generalizations may be realized late in development
+    - errors
+        - requirement errors
+
+- Advantage of using design patterns
+    - Encapsulating data stores
+    - Encapsulating legacy components
+    - Encapsulating context
+    - Encapsulating platforms
+    - Encapsulating control flow
+    - Encapsulating hierarchies
+    - Maintaining consistency
+    - Heuristics for selecting design patterns
 
 ### Contracts
 
-- TODO: work on me!!
+- What is a contract?
+    - specifies constraints on a class that:
+        - must be ensured by:
+            - class implementer
+            - class extender
+        - must be met by:
+            - class user
+- Contracts inclue three types on contraints:
+    - invaraint
+        - associated with a **class**
+        - permanent contract that extends operation-specific contracts
+    - precondition
+        - part of the contract that class user must respect
+    - postcondition
+        - part of the contract that the class implementer guarantees
+        - the class user must fulfilled their part of the contract
 
+#### Invariant
 
+- What is it?
+    - predicate that is always true for all instances of a class
+    - associated with a class or an interface
+    - used to specify consistency constraints among attributes
+    - ex:
+      - max number of players in tournament must be greater than 0
+      - given a *Tournamnent* object *t: t.getMaxNumPlayers() > 0*  
+- avoid constraints that involve many association traversals
+    - otherwise we get tighter coupling between unrelated classes
+#### Precondition
 
+- What is a precondition
+   - predicate that must be true before an operation is invoked
+   - associated with an operation
+   - used to specify constraints that class user must meet before invoking the 
+   operation
+   - example of precondition for *acceptPlayer()* operation:
+      - player must not already be accepted, and the current number of players
+      must be less than the maximum
+      - given a *Tournament* object *t* and player *p*:
+          *!t.isPlayerAccepted(p) and t.getNumPlayers() < t.
+          getMaxNumPlayers()*
 
+#### PostCondition
 
-
+- What is it?
+   - predicate that must be true after an operation executes
+   - associated with an operation
+   - used to specify constraints that class implementer and extender must ensure 
+   after execution
+   - example of precondition for *acceptPlayer()* operation:
+      - accepting a player must increase the player count by 1
+      - given a *Tournament* object *t* and player *p*:
+          *t.getNumPlayers_afterAccept() = t.
+          getNumPlayers_beforeAccept() + 1*
 
 ## Implementation
 
