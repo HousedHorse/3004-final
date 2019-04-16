@@ -107,7 +107,8 @@
           - fault in the programming environment
           - power failure
 ![fault](figs/fault.png)
-  
+  - State
+    - An error state would be a train running on the track reaching that fault 
 #### Test cases
   - set of inputs and expected results that exercise a component
   - goal is to cause failures and detect faults
