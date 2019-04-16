@@ -12,6 +12,7 @@ Also, [some questions](questions.md) and [answers](answers.md).
 - ~Analysis~
 - High level system design
 - Detailed object design
+- Design patterns
 
 ## What to Contribute
 
