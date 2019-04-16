@@ -509,51 +509,52 @@
 - what is model transformation?
     - changes applied to an existing object model
     - results in a new object model
-
-![Imp Chart](figs/modelTransEx.png)
-
 - goal
     - simplify
     - optimize
     - get closer to meeting requirements
     - improving one aspect of a model while preserving all its other
-
 - properties
     - localized
     - affect a small number of classes, attributes, operations
     - executed in series of small steps
     - can occur anytime in object design, implementation
 
-- optimizing class model
-    - focus on performance requirements
-    - reduce multiplicity of associations
-    - add redundant associations for efficiency
-    - add derived attributes
-
-- realizing associations
-    - map associations to source code constructs -> references, collections of references, qualifying associations, association classes
-
-- mapping contracts to exceptions
-    - describe behaviour of operations when contracts are broken
-        - where/when exceptions are raised
-        - where exceptions are handled (at what layer)
-    - mapping class model to storage schema
-        - define how class model relates to selected storage schema
-
 ![4 types of model transformation](figs/4types.png)
+
+#### Model transformation
+
+- make changes within model
+    - a lot of changes is architectural, not model
+    - we want to do just one change at a time
+    - each transformation addresses a single criterion
+    - transformations must be isolated
+    - validation step
+
+#### Refactoring
+
+- make changes within code
+
+#### Reverse engineering
+
+- make changes to model according to changes in code
+
+#### Forward engineering
+
+- make changes to code according to changes in model
 
 ### Mapping to storage
 
 #### Relational database
 
-- Schema
+- schema
     - description of data
     - set of attributes stored for each object
     - also known as meta-model for data
-- Primary key
+- primary key
     - set of attributes whose values uniquely identify a data record
     - used to refer unambiguously to a specific data record
-- Foreign key
+- foreign key
     - attribute that references a primary key in another table
     - links a data record in one table to more records in another table
 
