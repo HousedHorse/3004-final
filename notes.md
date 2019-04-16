@@ -143,9 +143,9 @@
 
 - Characteristics:
     - enables client-independent creation of objects
-    - provides client with interface to classes with different 
+    - provides client with interface to classes with different
     implementations
-    
+
 - Solution for encapsulating platforms:
     - used for substituting fmaily of concrete products transparently from the client
     - ex: application with products from different manufacturers
@@ -160,7 +160,7 @@
 
 - Characteristics:
     - wraps around existing code
-    - sits between client and legacy code, prpoviding legacy services with a new 
+    - sits between client and legacy code, prpoviding legacy services with a new
     interface
 
 ![adapter2](adapter2.png)
@@ -181,7 +181,7 @@
 ![bridge1](bridge1.png)
 
 - Solution for encapsulating data stores:
-    - used for substituting multiple realizationg of the same interace for 
+    - used for substituting multiple realizationg of the same interace for
     different uses
     - ex: multiple implementaions of data store
 
@@ -234,7 +234,7 @@
 
 ![command2](command2.png)
 
-#### Observer 
+#### Observer
 
 - Characteristics:
     - used to separate entity objects from view
@@ -775,7 +775,18 @@
 
 #### Boundary
 
-#### State
+- special case of equivalence
+- focus only on testing at boundary of equivalence classes
+
+![boundtest](figs/boundtest.png)
+
+#### State-based
+
+- resulting state vs expected state
+- class-based
+- similar to equivalence testing for states in the state machine diagram
+
+![statetest](figs/statetest.png)
 
 #### Polymorphism
 
