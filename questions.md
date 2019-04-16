@@ -2,18 +2,53 @@
 
 ## Multiple Choice (Concepts)
 
-1. This is an example question.
-    - A) choice 1
-    - B) choice 2
-    - C) choice 3
-    - D) choice 4
+1. Why is software engineering necessary?
+    - A) It's fun
+    - B) Huge systems and projects are difficult to manage
+    - C) It isn't necessary
+    - D) It's an easy way for people to work together
 
+2. What is not a build model?
+    - A) Functional model
+    - B) Dynamic model
+    - C) Static model
+    - D) Object model
 
+3. What is not an example of a dynamic model?
+    - A) Use case diagrams
+    - B) State machine diagrams
+    - C) Activity diagrams
+    - D) Sequence diagrams
 
+4. Why is traceability important?  
+    - A) It's easy to trace back the design of the code 
+    - B) It helps with maintenance of design
+    - C) It helps the developer keep on track 
+    - D) It helps with the users to keep on track 
 
+5. Where does the client's knowledge end?  
+    - A) It ends after implementation 
+    - B) It ends after testing
+    - C) It ends after analysis
+    - D) It ends after requirement and elicitation 
 
+6. What is not a original design pattern?
+    - A) Creational
+    - B) Structural
+    - C) Behavioural
+    - D) Architectural
 
+7. What is not part of the behavioural design patterns
+    - A) Command
+    - B) Strategy
+    - C) Facade
+    - D) Observer
 
+8. What is not a design goal?
+    - A) Performance
+    - B) Supportibility
+    - C) Cost
+    - D) Mainteance
 
 ## Short Answer (Concepts)
 
