@@ -163,7 +163,7 @@
     - sits between client and legacy code, prpoviding legacy services with a new
     interface
 
-![adapter2](adapter2.png)
+![adapter2](figs/adapter2.png)
 
 - Solution for encapsulating legacy components:
     - used for converting existing (legacy) component interface into one that the
@@ -171,21 +171,21 @@
     - similar to **Bridge**, but for dealing with existing components
     - ex: new UI on an existing back end
 
-![adapter](adapter.png)
+![adapter](figs/adapter.png)
 
 #### Bridge
 
 - Characteristics:
     - allows for alternate implementation, with a single interface
 
-![bridge1](bridge1.png)
+![bridge1](figs/bridge1.png)
 
 - Solution for encapsulating data stores:
     - used for substituting multiple realizationg of the same interace for
     different uses
     - ex: multiple implementaions of data store
 
-![bridge2](bridge2.png)
+![bridge2](figs/bridge2.png)
 
 #### Composite
 
@@ -194,13 +194,13 @@
     - leaves and composites provide a common interface
     - commands on composites propagated recursively over all its components
 
-![composite1](composite1.png)
+![composite1](figs/composite1.png)
 
 - Solution for encapsulating hierarchies:
     - used for representing recursive hierarchy, such as components and composties
     - ex: UI toolkits, such as Java Swing
 
-![composite2](composite2.png)
+![composite2](figs/composite2.png)
 
 #### Facade
 
@@ -208,7 +208,7 @@
     - used to encapsulate subsytems
     - provides high-level interface that uses lower-level class operations
 
-![facade](facade.png)
+![facade](figs/facade.png)
 
 #### Proxy
 
@@ -216,7 +216,7 @@
     - encapulates expensive (performance-wise, security-wise) objects
     - proxy objects provide a gateway to their corresponding real objects
 
-![proxy](proxy.png)
+![proxy](figs/proxy.png)
 
 ### Behavioral
 
@@ -226,13 +226,13 @@
     - used to encapsulate control flow
     - provides interface that groups operations on all requests
 
-![command](command.png)
+![command](figs/command.png)
 
 - Solution for encapsulating control flow:
     - used for providing generic user requests, without knowing content of request
     - ex: execute, undo, store
 
-![command2](command2.png)
+![command2](figs/command2.png)
 
 #### Observer
 
@@ -241,13 +241,13 @@
     - changes to one object (publisher/subject) are communicated to interested
     parties (subscriber/observer)
 
-![observer1](observer1.png)
+![observer1](figs/observer1.png)
 
 - Solution for maintaining consistency:
     - used for propagating model changes acrosee views
     - ex: MVC architecture
 
-![observer2](observer2.png)
+![observer2](figs/observer2.png)
 
 #### Strategy
 
@@ -255,7 +255,7 @@
     - used to encapsulate algorithms
     - separate policy decides which algorithm performs a task
 
-![strategy1](strategy1.png)
+![strategy1](figs/strategy1.png)
 
 - Solution for encapsulating context:
     - used for dynamically substituting multiple realizations of the same interface
@@ -263,7 +263,7 @@
     - similar to **Bridge**, but client decides which implementation to use
     - ex: substituting different network connections dynamically
 
-![strategy2](strategy2.png)
+![strategy2](figs/strategy2.png)
 
 ## Requirements elicitation
 
@@ -574,7 +574,7 @@
     - preferable to implementation inheritance
         - special case: private inheritance in C++
 
-![delegation](delegation.png)
+![delegation](figs/delegation.png)
 
 ### Liskov's principle
 
