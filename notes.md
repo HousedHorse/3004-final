@@ -297,11 +297,24 @@
 
 #### Activity diagrams
 
-- TODO: add me
+- start -> black dot
+- arrows to activities
+- bars split and join arrows
+- diamonds for conditions
+- swim lanes
+    - break diagram into related lanes of activity
+- end -> black dot with circle around it
+    - looks like a target
 
 #### State machine diagrams
 
-- TODO: add me
+- start -> black dot
+- arrows to other states
+    - all arrows except from start have a condition attached to them
+    - bubbles with verb phrases describing what system is doing
+    - what *state* is the system in
+- end -> black dot with circle around it
+    - looks like a target
 
 
 
