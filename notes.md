@@ -405,7 +405,23 @@
 
 ### System design strategies
 
-- TODO: work on me!!
+#### Persistent Data Management
+
+#### Access Control
+
+- static
+- dynamic
+
+#### Hardware/Software Mapping (Deployment Diagram)
+
+- nodes
+    - physical systems in a network
+- runtime components
+    - different processes
+
+- deployment diagrams
+- everything is instantiated
+- components can support multiple subsystems
 
 ![deployment](figs/deployment.png)
 
@@ -439,31 +455,186 @@
 
 ### Mapping objects to collections
 
-- TODO: work on me!!
+#### Mapping associations
+
+- single references: one object stores a handle to another object
+- collections: one object stores references to several objects of the same class
+
+- unidirectional one-to-one
+    - mapped as reference within source object to destination
+
+![uni one-one](figs/unioneone.png)
+
+- bidirectional one-to-one
+    - a reference within source object to destination object
+    - a reference within destination object to source object
+
+![bi one-one](figs/bioneone.png)
+
+- one-to-many
+    - within source object, collection of references to destination
+    - may be unidirectional or bidirectional
+
+![one many](figs/onemany.png)
+
+- many-to-many
+    - within each source object, collection of references to destination
+    - within each destination object, collection of references to source
+
+![many many mengchi](figs/manymany.png)
+
+#### Optimizing associations
+
+- Associations with a “many” side can be problematic
+    - can be slow to access
+    - can be difficult to maintain consistency
+- solutions: qualified associations and association classes
+
+- qualified associations (mapping)
+    - used to reduce multiplicity on the “many” side of an association
+    - can be used with one-to-many or many-to-many associations
+    - unique key mapped to object (usually with a hash -> the hash is the qualifying value)
+
+![qualified ass](figs/qualifiedass.png)
+
+- association classes
+    - used to hold attributes and operations specific to an association
+    - implemented as separate object with binary associations
+    - each binary association mapped to set of reference attributes
+
+![ass classes](figs/assclasses.png)
 
 ### Model transformations
 
-- TODO: work on me!!
+- what is model transformation?
+    - changes applied to an existing object model
+    - results in a new object model
 
-### Mapping associations to collections
+![Imp Chart](figs/modelTransEx.png)
 
-- TODO: work on me!!
+- goal
+    - simplify
+    - optimize
+    - get closer to meeting requirements
+    - improving one aspect of a model while preserving all its other
 
-### Mapping associations to storage
+- properties
+    - localized
+    - affect a small number of classes, attributes, operations
+    - executed in series of small steps
+    - can occur anytime in object design, implementation
 
-- TODO: work on me!!
+- optimizing class model
+    - focus on performance requirements
+    - reduce multiplicity of associations
+    - add redundant associations for efficiency
+    - add derived attributes
+
+- realizing associations
+    - map associations to source code constructs -> references, collections of references, qualifying associations, association classes
+
+- mapping contracts to exceptions
+    - describe behaviour of operations when contracts are broken
+        - where/when exceptions are raised
+        - where exceptions are handled (at what layer)
+    - mapping class model to storage schema
+        - define how class model relates to selected storage schema
+
+![4 types of model transformation](figs/4types.png)
+
+### Mapping to storage
+
+#### Relational database
+
+- Schema
+    - description of data
+    - set of attributes stored for each object
+    - also known as meta-model for data
+- Primary key
+    - set of attributes whose values uniquely identify a data record
+    - used to refer unambiguously to a specific data record
+- Foreign key
+    - attribute that references a primary key in another table
+    - links a data record in one table to more records in another table
+
+![relationaldb](figs/relationaldb.png)
+
+#### Classes and attributes
+
+- Correspondences between object model and schema
+  - class: table
+  - attribute: column
+  - instance: row
+- Match same names in object model and schema
+    - provides traceability
+-  Mapping attribute types
+    - some constraints may have to be added to the object model(ex: max string length)
+- Primary key
+    - choose a set of class attributes
+        - problem if key values change
+        - problem if application domain changes
+    - add a unique identifier
+        - more robust
+
+![mapclassattr](figs/mapclassattr.png)
+
+#### Associations
+
+- buried associations
+- association tables
+- vertical and horizontal mapping
 
 ### Buried associations
 
-- TODO: work on me!!
+- used to implement one-to-one and one-to-many associations
+- one-to-one: include foreign key of destination object in record of source object (and vice-versa for bidirectional association)
+- one-to-many: include foreign key of source object (“one” side) in records of destination objects (“many” side)
+
+![buriedass](figs/buriedass.png)
 
 ### Association tables
 
-- TODO: work on me!!
+- used to implement many-to-many associations
+- create a new two-column table with foreign keys for both classes in the association
+- each row corresponds to one link
+- can be used for one-to-one and one-to-many
+  - increases the number of tables
+  - increases the time required to traverse associations
+
+![asstable](figs/asstable.png)
 
 ### Vertical/horizontal mapping of inheritance to storage
 
-- TODO: work on me!!
+#### Vertical mapping
+
+- superclass and subclass each have their own table
+- superclass table:
+  - contains superclass attributes
+  - includes additional attribute for name of record’s actual subclass
+- subclass table:
+  - contains subclass attributes
+  - shares same key as superclass table
+- access to one object involves multiple table retrievals
+
+![vertmap](figs/vertmap.png)
+
+#### Horizontal mapping
+
+- only the subclass has a table
+- includes attributes from superclass and subclass
+- access to one object involves a single table retrieval
+
+![hormap](figs/whoremap.png)
+
+#### Trade-offs
+
+- vertical mapping
+  - adds to access time with multiple table retrievals
+  - facilitates modifiability, e.g. when adding attributes to superclass
+- horizontal mapping
+  - duplicates superclass columns for each subclass
+  - schema modifications are more complex
+  - queries are faster, especially with deep inheritance
 
 
 
