@@ -527,62 +527,58 @@
 ### Professionalism
 
 - Informally a profession is a vocation that requires:
-  - a high level of education
-  - practical experience
+    - a high level of education
+    - practical experience
 - They are paid well (ex: doctors, lawyers)
-- Trust professional so 
-  - correctly ascertain and treat problems
-  - take actions for the good of their clients
-  
-- **Attributes of a Mature Profession**
-  1. Education (Accrediation)
-  1. Skills development
-  1. Licensing (Certification)
-  1. Professional society (code of ethics)
-  1. Professional development  
-  1. Repeat from step 3
-
+- Trust professional so
+    - correctly ascertain and treat problems
+    - take actions for the good of their clients
 - **Computer-related Careers**
-  - Ability to harm the public can be similar to members of more mature professions
+    - Ability to harm the public can be similar to members of more mature professions
     - Lack of strict qualification requirements
+
+#### Attributes of a mature professional
+
+1. Education (Accreditation)
+1. Skills development
+1. Licensing (Certification)
+1. Professional society (code of ethics)
+1. Professional development
+1. Repeat from step 3
 
 ### Code of ethics
 
-- Principles:
-    - Public: act in the public's best interest
-    - Client and employer: act in the client's and employer's best interest
-    - Product: ensure products meet highest standards
-    - Judgement: maintain integrity and independence
-    - Management: promote ehtical management of software development
-    - Colleagues: be fair and supportive to colleagues
-    - Self: participate in lifelong learning
-        
+- Public: act in the public's best interest
+- Client and employer: act in the client's and employer's best interest
+- Product: ensure products meet highest standards
+- Judgement: maintain integrity and independence
+- Management: promote ethical management of software development
+- Colleagues: be fair and supportive to colleagues
+- Self: participate in lifelong learning
 
 ### Process for making ethical decisions
 
-- **ACM Software Engineering Code of Ethics and Professional Practise**
+#### Brainstorm Phase
 
-- **Brainstormin phase:**
-    - identify stakeholders
-        - people involved, directly or indirectly
-    - for each stakeholder:
-        - identify risks, benefits, consequences, costs
-        - identify rights
-    - identify all possible courses of action
-        - I-win-you-lose
-        - you-win-I-lose
-        - the third option: we-both-win
-            - Stephen Covey's Habit #4
+- identify stakeholders
+    - people involved, directly or indirectly
+- for each stakeholder:
+    - identify risks, benefits, consequences, costs
+    - identify rights
+- identify all possible courses of action
+    - I-win-you-lose
+    - you-win-I-lose
+    - the third option: we-both-win
+        - Stephen Covey's Habit #4
 
-- **Analysis phase:**
-    - identify impact of all courses of action on the stakeholders
-    - consider:
-        - software engineering Code of Ethics
-        - your morals and experience
-    - categorize each action as:
-        - ethically obligatory
-        - ethically prohibited
-        - ethically acceptable
-    - choose the best option, considering the ethical merits
+#### Analysis phase
 
-
+- identify impact of all courses of action on the stakeholders
+- consider:
+    - software engineering Code of Ethics
+    - your morals and experience
+- categorize each action as:
+    - ethically obligatory
+    - ethically prohibited
+    - ethically acceptable
+- choose the best option, considering the ethical merits
