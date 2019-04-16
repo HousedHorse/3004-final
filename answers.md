@@ -71,6 +71,49 @@ The Facade design pattern is used to
 
 The Bridge design pattern is used to
 
+### Question 6
+
+A scenario can be thought of as an instance of a use case. It involves instantiated actors and initial analysis objects.
+Scenarios should be done first as they can help establish an understanding between the client and designers and bootstrap the creation
+of the actual use cases down the road (once we figure out which scenarios are good and which are garbage).
+
+### Question 7
+
+The includes relationship is used to abstract use cases that include redundant steps or to break down complex functionality into smaller
+parts.
+
+The extends relationship is used for exceptions; functionality that is not normal, but is instead triggered by some event within the use case. This is useful for error messages.
+
+These are not interchangeable and most often the includes relationship should be used. Extends is only useful for error messages.
+
+### Question 8
+
+Shared aggregation is a weaker form of aggregation than composition. In shared aggregation, another class can
+aggregate the same class that is already being aggregated and the class that is being aggregated can exist elsewhere in the program.
+
+On the other hand, composition is a much stronger form of aggregation. If class A has a composition relationship with class B, it means
+that B is a part that makes up the complete form of A. B cannot exist anywhere else in the program.
+
+By the logic above, class A can be composed of class B and class C. But class A and class B cannot both be composed of class C.
+
+### Question 9
+
+State machine diagrams deal with system state at each step in the use case. Each state has one or more arrows flowing out of it
+to another state(s), labeled with the condition required to take that path. State machine diagrams have a starting and an end state.
+
+Activity diagrams deal with system activities at various stages in a use case. Each activity has one arrow flowing from/to it
+and these arrows can be split by vertical bars and diamonds which represent conditionals. The activity diagrams also have a starting
+and an ending point. Finally, an activity diagram can have "swim lanes" which represent the flow of control between various actors
+and objects.
+
+### Question 10
+
+You should use an adapter pattern here. The adapter pattern will allow you to build a modern GUI front end on top of the old
+`bc` program. You can make API calls to `bc` (probably via the pipe and filter architecture since `bc` is an older UNIX program)
+in order to make it work with your GUI.
+
+### Question 11
+
 
 
 
