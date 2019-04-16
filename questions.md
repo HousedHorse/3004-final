@@ -37,6 +37,12 @@
 1. Explain the difference between reverse engineering and forward engineering using an example.
 1. Consider relational databases and OO databases. List one advantage and one disadvantage of each in the context of implementing a C++ program that needs to interface with a database.
 1. What is the difference between vertical and horizontal mapping in the context of mapping inheritance relationships to storage? Explain the trade-off between the two.
+1. What is the difference between blackbox and whitebox testing? Why is it important to use both of them when unit testing?
+1. You have a class A which is subclassed by classes A1, A2, and A3. A has virtual methods foo() and bar(). What kind of testing should you do to ensure that A1, A2, and A3 are all behaving properly?
+1. Explain the process of state-based testing as it relates to a specific type of UML diagram. (Hint: What UML diagram deals with state?)
+1. Name the four types of integration testing and describe each one. You may wish to support your explanation with an example.
+1. Compare and contrast the waterfall and v-model life cycle models.
+1. Compare and contrast the spiral and agile life cycle models.
 
 
 
@@ -89,4 +95,4 @@ Cooks can do the following:
 
 ## Short Answer (Ethics)
 
-1.
+1. Suppose you are developing an application to help users do their taxes. In order to help generate a revenue stream, your boss demands that you include a crypto miner inside the application that can run undetected and mine bitcoin for the organization. Use the ethical decision making process to determine the best course of action.
