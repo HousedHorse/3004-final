@@ -124,26 +124,28 @@
 
 ### Functional model
 
-- use case diagrams 
+- use case diagrams
 - use case tables
-- FR, NFR, tables
+- FR, NFR tables
 
 ## Design Patterns
 
 - a set of classes and the associations between them
 - Selection of original design patterns:
     - creational: they deal with object creation mechanisms
-    - structual: they simplify the implementation of relationships between 
+    - structual: they simplify the implementation of relationships between
     objects
     - behavioural: they realize common communication patterns between objects
 
 ### Creational
 
 #### Abstract Factory
+
 - Characteristics:
     - enables client-independent creation of objects
     - provides client with interface to classes with different 
     implementations
+    
 - Solution for encapsulating platforms:
     - used for substituting fmaily of concrete products transparently from the client
     - ex: application with products from different manufacturers
@@ -216,7 +218,7 @@
 
 ![proxy](proxy.png)
 
-### Behavioural
+### Behavioral
 
 #### Command
 
@@ -428,7 +430,7 @@
 1. control creates notification object
 1. notification object notifies user
 
-<!-- good copy of my diagram will go here -->
+![sequence diagram](figs/sequence.png)
 
 #### Activity diagrams
 
@@ -441,7 +443,7 @@
 - end -> black dot with circle around it
     - looks like a target
 
-<!-- good copy of my diagram will go here -->
+![activity diagram](figs/activity.png)
 
 #### State machine diagrams
 
@@ -453,7 +455,7 @@
 - end -> black dot with circle around it
     - looks like a target
 
-<!-- good copy of my diagram will go here -->
+![state machine](figs/state-machine.png)
 
 
 
@@ -490,15 +492,37 @@
 - ball -> provides service
 - socket -> uses service
 
+![component](figs/component.png)
+
 ### Packaging diagrams
 
 - looks like "folders"
 - subsystems inside subsystems
 - inheritance and aggregation (just arrows, no diamonds)
 
+![package](figs/package.png)
+
 ### System design strategies
 
-- TODO: work on me!!
+#### Persistent Data Management
+
+#### Access Control
+
+- static
+- dynamic
+
+#### Hardware/Software Mapping (Deployment Diagram)
+
+- nodes
+    - physical systems in a network
+- runtime components
+    - different processes
+
+- deployment diagrams
+- everything is instantiated
+- components can support multiple subsystems
+
+![deployment](figs/deployment.png)
 
 
 
@@ -530,31 +554,187 @@
 
 ### Mapping objects to collections
 
-- TODO: work on me!!
+#### Mapping associations
+
+- single references: one object stores a handle to another object
+- collections: one object stores references to several objects of the same class
+
+- unidirectional one-to-one
+    - mapped as reference within source object to destination
+
+![uni one-one](figs/unioneone.png)
+
+- bidirectional one-to-one
+    - a reference within source object to destination object
+    - a reference within destination object to source object
+
+![bi one-one](figs/bioneone.png)
+
+- one-to-many
+    - within source object, collection of references to destination
+    - may be unidirectional or bidirectional
+
+![one many](figs/onemany.png)
+
+- many-to-many
+    - within each source object, collection of references to destination
+    - within each destination object, collection of references to source
+
+![many many mengchi](figs/manymany.png)
+
+#### Optimizing associations
+
+- Associations with a “many” side can be problematic
+    - can be slow to access
+    - can be difficult to maintain consistency
+- solutions: qualified associations and association classes
+
+- qualified associations (mapping)
+    - used to reduce multiplicity on the “many” side of an association
+    - can be used with one-to-many or many-to-many associations
+    - unique key mapped to object (usually with a hash -> the hash is the qualifying value)
+
+![qualified ass](figs/qualifiedass.png)
+
+- association classes
+    - used to hold attributes and operations specific to an association
+    - implemented as separate object with binary associations
+    - each binary association mapped to set of reference attributes
+
+![ass classes](figs/assclasses.png)
 
 ### Model transformations
 
-- TODO: work on me!!
+- what is model transformation?
+    - changes applied to an existing object model
+    - results in a new object model
+- goal
+    - simplify
+    - optimize
+    - get closer to meeting requirements
+    - improving one aspect of a model while preserving all its other
+- properties
+    - localized
+    - affect a small number of classes, attributes, operations
+    - executed in series of small steps
+    - can occur anytime in object design, implementation
 
-### Mapping associations to collections
+![4 types of model transformation](figs/4types.png)
 
-- TODO: work on me!!
+#### Model transformation
 
-### Mapping associations to storage
+- make changes within model
+    - a lot of changes is architectural, not model
+    - we want to do just one change at a time
+    - each transformation addresses a single criterion
+    - transformations must be isolated
+    - validation step
 
-- TODO: work on me!!
+#### Refactoring
+
+- make changes within code
+
+#### Reverse engineering
+
+- make changes to model according to changes in code
+
+#### Forward engineering
+
+- make changes to code according to changes in model
+
+### Mapping to storage
+
+#### Relational database
+
+- schema
+    - description of data
+    - set of attributes stored for each object
+    - also known as meta-model for data
+- primary key
+    - set of attributes whose values uniquely identify a data record
+    - used to refer unambiguously to a specific data record
+- foreign key
+    - attribute that references a primary key in another table
+    - links a data record in one table to more records in another table
+
+![relationaldb](figs/relationaldb.png)
+
+#### Classes and attributes
+
+- Correspondences between object model and schema
+  - class: table
+  - attribute: column
+  - instance: row
+- Match same names in object model and schema
+    - provides traceability
+-  Mapping attribute types
+    - some constraints may have to be added to the object model(ex: max string length)
+- Primary key
+    - choose a set of class attributes
+        - problem if key values change
+        - problem if application domain changes
+    - add a unique identifier
+        - more robust
+
+![mapclassattr](figs/mapclassattr.png)
+
+#### Associations
+
+- buried associations
+- association tables
+- vertical and horizontal mapping
 
 ### Buried associations
 
-- TODO: work on me!!
+- used to implement one-to-one and one-to-many associations
+- one-to-one: include foreign key of destination object in record of source object (and vice-versa for bidirectional association)
+- one-to-many: include foreign key of source object (“one” side) in records of destination objects (“many” side)
+
+![buriedass](figs/buriedass.png)
 
 ### Association tables
 
-- TODO: work on me!!
+- used to implement many-to-many associations
+- create a new two-column table with foreign keys for both classes in the association
+- each row corresponds to one link
+- can be used for one-to-one and one-to-many
+  - increases the number of tables
+  - increases the time required to traverse associations
+
+![asstable](figs/asstable.png)
 
 ### Vertical/horizontal mapping of inheritance to storage
 
-- TODO: work on me!!
+#### Vertical mapping
+
+- superclass and subclass each have their own table
+- superclass table:
+  - contains superclass attributes
+  - includes additional attribute for name of record’s actual subclass
+- subclass table:
+  - contains subclass attributes
+  - shares same key as superclass table
+- access to one object involves multiple table retrievals
+
+![vertmap](figs/vertmap.png)
+
+#### Horizontal mapping
+
+- only the subclass has a table
+- includes attributes from superclass and subclass
+- access to one object involves a single table retrieval
+
+![hormap](figs/whoremap.png)
+
+#### Trade-offs
+
+- vertical mapping
+  - adds to access time with multiple table retrievals
+  - facilitates modifiability, e.g. when adding attributes to superclass
+- horizontal mapping
+  - duplicates superclass columns for each subclass
+  - schema modifications are more complex
+  - queries are faster, especially with deep inheritance
 
 
 
@@ -566,11 +746,47 @@
 
 ### Blackbox vs whitebox
 
-- TODO: work on me!!
+- blackbox
+    - test output vs expected output given input
+- whitebox
+    - test inner workings of a function
+- we need **both**
 
 ### Unit testing (path, equivalence, boundary, state, polymorphism)
 
-- TODO: work on me!!
+#### Path
+
+- whitebox technique
+- test all paths through the code
+
+![pathtest](figs/pathtest1.png)
+![pathtest](figs/pathtest2.png)
+![pathtest](figs/pathtest3.png)
+
+#### Equivalence
+
+- blackbox technique
+- separate input between equivalence classes
+    - all input belongs to equivalence classes
+    - no two equivalence classes share input
+- test only one member of each equivalence class
+
+![equivtest](figs/equivtest.png)
+
+#### Boundary
+
+#### State
+
+#### Polymorphism
+
+- whitebox technique
+- test with a typecast of each
+- invoke operation on all subclasses
+- flow graph
+
+![polytest](figs/polytest1.png)
+![polytest](figs/polytest2.png)
+![polytest](figs/polytest3.png)
 
 ### Integration testing (top-down, bottom-up, sandwich, modified sandwich, test stubs, test drivers)
 
