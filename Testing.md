@@ -354,3 +354,62 @@
       - disadvantages:
         - system evolves more incrementally
         - design is more subject to change
+
+### System Testing
+
+#### Functional Testing
+  - Characteristics of functional testing
+    - also known as requirements testing
+    - blackbox technique
+    - test cases are derived from Requirements Analysis Document
+  - Goal is to find differences between:
+    - the system and the functional requirements
+    - the use case model and the observed system behaviour
+  - Strategy
+    - inspect the use case model
+    - identify scenarios that are likely to cause failures
+    - exercise common and exceptional use cases
+![ft](figs/ft1.png)
+![ft](figs/ft2.png)
+![ft](figs/ft3.png)
+
+#### Performance Testing
+  - Goal is to find differences between:
+    - the system and the design goals selected during design
+  - Test cases are derived from:
+    - System Design Document
+    - Requirements Analysis Document
+  - Performance testing includes:
+    - stress testing
+      - checks if system can respond to multiple simultaneous requests
+    - volume testing
+      - finds faults associated with large amounts of data
+    - security testing
+      - finds security faults in the system
+      - one approach: white hat hackers try to break in
+    - timing testing
+      - find system behaviours that violate timing constraints
+    - recovery testing
+      - evaluate the ability of the system to recover from error states
+  - System is deemed validated if:
+    - functional and performance testing produce no failures
+    
+#### Acceptance Testing
+  - Final phases of testing before client accepts the system
+    - field testing
+      - goal
+        - install the system for selected group of users
+        - collect feedback from users
+      - types of field testing
+        - alpha test: field test with system in development environment
+        - beta test: field test with system in target environment
+      - unlike usability tests, user behaviour is not observed
+    - acceptance testing
+      - client evaluates the system
+      - three possible tests:
+        - benchmark testing: selected users evaluate the system against requirements
+        - competitor testing: system is tested against another product
+        - shadow testing: new and legacy systems are executed in parallel
+    - installation testing
+      - system is installed in target environment
+      - functional and performance tests are repeate
