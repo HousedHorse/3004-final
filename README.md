@@ -6,7 +6,7 @@ Check out the [notes](notes.md).
 
 Also, [some questions](questions.md) and [answers](answers.md).
 
-## Unclaimed Sections
+## Unclaimed Sections (see Issues section)
 
 - Models in requirements analysis
 - Analysis
