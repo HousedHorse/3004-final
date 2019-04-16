@@ -469,7 +469,11 @@
 
 ### Design goals
 
-- TODO: work on me!!
+1. performance
+1. dependability
+1. cost
+1. maintenance
+1. end user experience
 
 ### Subsystem decomposition
 
