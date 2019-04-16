@@ -189,3 +189,73 @@
         - for example: UI prototype
     - product test
       - users presented with functional system
+### Unit Testing
+  - objects and subsystems in individual components
+  - groups of objects can be tested after individual objects are tested
+  - Characteristics
+    - reduces complexity of testing process
+    - facilitates finding and correcting faults
+    - allows for parallelism in testing process
+  - Candidate units
+    - selected from object model and subsystem decomposition
+    - all objects should be tested
+    - at minimum, participating objects in use cases should be tested
+    - subsystems can be tested after all its classes have been tested
+
+### Techniques for Unit Testing
+#### Equivalence testing
+  - blackbox technique
+  - minimizes the number of test cases
+  - input is partitioned into equivalence classes
+    - testing will behave similarly for all members of an equivalence class
+  - only one member of each equivalence class is tested    
+  - Equivalence testing strategy
+    - identify equivalence classes
+    - criteria for identifying equivalence classes
+      - coverage: every input belongs to an equivalence class
+      - disjointedness: no input belongs to more than one equivalence class
+      - representation: any error occurring with one member occurs for all members
+    - select test input
+      - for each equivalence class, select one valid and one invalid input
+![equivtest](figs/equivtest.png)
+
+#### Boundary testing
+  - special case of equivalence testing
+  - focus on conditions at the boundary of equivalence classes
+  - Disadvantage: some kinds of errors will not be detected
+![boundtest](figs/boundtest.png)
+
+#### Path testing
+  - whitebox technique
+  - identifies faults by exercising all possible paths through the code
+  - strategy
+    - construct flow graph for test component
+    - design test cases so that every edge is traversed at least once
+  - does not detect faults associated with:
+    - code omissions
+    - invariants of data structures
+![pathtest](figs/pathtest1.png)
+![pathtest](figs/pathtest2.png)
+![pathtest](figs/pathtest3.png)
+
+#### State-based testing
+  - compares resulting state of system against expected state
+  - class-based
+  - strategy
+    - for each state in state machine diagram, derive representative set of stimuli for each transition
+  - similar to equivalence testing
+  - achieving a given state can be complex
+![statetest](figs/statetest.png)
+
+#### Polymorphism testing
+  - all possible dynamic bindings must be tested
+  - introduces new challenge to testing
+  - strategy
+    - expand source code to:
+      - typecast polymorphic object into each possible subclass
+      - invoke operation on subclass
+    - construct flow graph
+    - perform path testing
+![polytest](figs/polytest1.png)
+![polytest](figs/polytest2.png)
+![polytest](figs/polytest3.png)
