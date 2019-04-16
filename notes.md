@@ -110,21 +110,57 @@
 
 ### Object model
 
-- TODO: work on me!!
+- class diagrams
+- data dictionaries
+    - define objects
+    - list attributes and associations
+    - explain when an attribute is set
 
 ### Dynamic model
 
-- TODO: work on me!!
+- state machines
+- sequence diagrams
+- activity diagram
 
 ### Functional model
 
-- TODO: work on me!!
+- use case diagrams 
+- use case tables
+- FR, NFR, tables
 
+## Design Patterns
 
+- a set of classes and the associations between them
+- Selection of original design patterns:
+    - creational: they deal with object creation mechanisms
+    - structual: they simplify the implementation of relationships between 
+    objects
+    - behavioural: they realize common communication patterns between objects
 
+### Creational
 
+- Abstract Factory
+    - Characteristics:
+        - enables client-independent creation of objects
+        - provides client with interface to classes with different 
+        implementations
+- Solution for encapsulating platforms:
+    - used for substituting fmaily of concrete products transparently from the client
+    - ex: application with products from different manufacturers
 
+### Structual
 
+- Adapter
+- Bridge
+- Composite
+- Facade
+- Proxy
+
+### Behavioural
+
+- Command
+- Observer 
+- Strategy
 
 
 
