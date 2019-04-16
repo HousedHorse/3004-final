@@ -145,3 +145,54 @@ properties
     - reuse constraint checking code
       - operations with similar preconditions can use encapsulated code
     - exception classes can be shared
+
+## Mapping to Collections
+
+### Mapping Associations
+  - Mapping associations to programming constructs
+    - associations are implemented as:
+      - single references: one object stores a handle to another object
+      - collections: one object stores references to several objects of the same class
+    - references are unidirectional between two objects
+  - Implementing different kinds of associations
+    - unidirectional one-to-one
+      - Mapped as reference within source object to destination
+![uni one-one](figs/unioneone.png)
+    - bidirectional one-to-one
+      - Mapped as:
+        - a reference within source object to destination object
+        - a reference within destination object to source object
+      - Consistency must be ensured
+![bi one-one](figs/bioneone.png)
+    - one-to-many
+      - Within source object, collection of references to destination
+      - May be unidirectional or bidirectional
+![one many](figs/onemany.png)
+    - many-to-many
+      - Mapped as:
+        - within each source object, collection of references to destination
+        - within each destination object, collection of references to source
+![many many mengchi](figs/manymany.png)
+  
+### Optimizing Associations
+  - Associations with a “many” side can be problematic
+    - can be slow to access
+    - can be difficult to maintain consistency
+  - Solutions: qualified associations and association classes
+  
+  - qualified associations
+    - used to reduce multiplicity on the “many” side of an association
+    - can be used with one-to-many or many-to-many associations
+    - Mapped as:
+      - additional qualifier attribute on the destination object
+        - must have a unique value
+      - a keyed collection (e.g. Map) on the source object, with:
+        - key is the destination object qualifier
+        - value is the destination object
+![qualified ass](figs/qualifiedass.png)
+
+  - association classes
+    - used to hold attributes and operations specific to an association
+    - implemented as separate object with binary associations
+    - each binary association mapped to set of reference attributes
+![ass classes](figs/assclasses.png)
