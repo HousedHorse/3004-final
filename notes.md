@@ -295,6 +295,8 @@
 1. control creates notification object
 1. notification object notifies user
 
+<!-- good copy of my diagram will go here -->
+
 #### Activity diagrams
 
 - start -> black dot
@@ -306,6 +308,8 @@
 - end -> black dot with circle around it
     - looks like a target
 
+<!-- good copy of my diagram will go here -->
+
 #### State machine diagrams
 
 - start -> black dot
@@ -315,6 +319,8 @@
     - what *state* is the system in
 - end -> black dot with circle around it
     - looks like a target
+
+<!-- good copy of my diagram will go here -->
 
 
 
@@ -332,7 +338,30 @@
 
 ### Subsystem decomposition
 
-- TODO: work on me!!
+- high cohesion, loose coupling
+    - services
+- closed or open architecture
+    - layers, partitions
+- architecture styles
+    - 3 tier
+    - 4 tier
+    - client-server
+    - peer-to-peer
+    - repository
+    - MVC
+    - pipe and filter
+
+### Component diagrams
+
+- ball and socket
+- ball -> provides service
+- socket -> uses service
+
+### Packaging diagrams
+
+- looks like "folders"
+- subsystems inside subsystems
+- inheritance and aggregation (just arrows, no diamonds)
 
 ### System design strategies
 
