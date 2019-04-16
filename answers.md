@@ -71,15 +71,16 @@ The design pattern being employed here is the proxy design pattern. The text des
 some abstract image class. Each one reimplements a pure virtual member function that "displays" the image. This allows the browser to
 display the proxy for the real image until it loads and leads to a better and more dynamic user experience.
 
-TODO: draw a picture of this
+TODO: paste amanda's good copy
 
 ### Question 5
 
-TODO: finish this in a few minutes
+The Facade design pattern is used to provide an abstraction to a more complicated interface. It allows the more complicated interface
+to be more easily or more simply used either by users (external actors) or by another class within the program.
 
-The Facade design pattern is used to
-
-The Bridge design pattern is used to
+The Bridge design pattern is used to provide a series of abstractions and connect them to a series of concrete implementors.
+For example, a program could have two types of views, each of which is bridged to one or more view panels depending on what type of
+view it is.
 
 ### Question 6
 
@@ -124,7 +125,75 @@ in order to make it work with your GUI.
 
 ### Question 11
 
+TODO: paste amanda's good copy
 
+### Question 12
+
+You would want to use inheritance (probably implementation inheritance) or, even more preferably, delegation to encapsulate
+the shared behavior. This turns the subsystem into a high cohesion subsystem, as all the classes are related to each other
+in terms of inheritance or provision/use of services.
+
+### Question 13
+
+Implementation inheritance is **not** a typical "is-a" relationship. It is designed to encapsulate redundant functionality and
+to reuse existing code. Specification inheritance is the traditional "is-a" relationship. It describes that class B and C are
+"varieties of class A".
+
+You would want to use implementation inheritance when delegation is not an option and you have two or more classes that share redundant
+functionality but are not varieties of the same thing.
+
+You want want to use specification inheritance when you have one or more objects that are a variety of another object. This is the
+traditional inheritance relationship.
+
+### Question 14
+
+Liskov's principle states that if some class is able to substituted for every instance of another class, the first class is a
+subtype of the second. This is important as the very idea of polymorphism is the ability to substitute subclasses in place of their
+parent or each other based on desired behavior.
+
+### Question 15
+
+- one-to-one
+    - bidirectional
+        - reference from source to destionation
+        - reference from destination to source
+    - unidirectional
+        - reference from source to destination
+- one-to-many
+    - bidirectional
+        - source has a list of destination references
+        - destination has a reference to source
+    - unidirectional
+        - source has a list of destination references
+- many-to-one
+    - bidirectional
+        - source has a reference to destination
+        - destination has a list of references to source
+    - unidirectional
+        - source has a reference to destination
+- many-to-many
+    - bidirectional
+        - source has a list of references to destination
+        - destination has a list of references to source
+    - unidirectional
+        - source has a list of references to destination
+
+### Question 16
+
+- association class
+    - separate class that tracks association between A and B
+    - has methods to describe the relationship
+    - advantage: doesn't require a unique value for each class
+- qualified association
+    - map
+    - classes have unique values (probably a hash)
+    - store the relationship in a hashmap for example
+    - advantage: probably lower overhead than the association class (map lookup time is O(1))
+
+### Question 17
+
+- model transformation
+- refactoring
 
 
 
