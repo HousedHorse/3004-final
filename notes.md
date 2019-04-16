@@ -124,16 +124,16 @@
 
 ### Functional model
 
-- use case diagrams 
+- use case diagrams
 - use case tables
-- FR, NFR, tables
+- FR, NFR tables
 
 ## Design Patterns
 
 - a set of classes and the associations between them
 - Selection of original design patterns:
     - creational: they deal with object creation mechanisms
-    - structual: they simplify the implementation of relationships between 
+    - structual: they simplify the implementation of relationships between
     objects
     - behavioural: they realize common communication patterns between objects
 
@@ -142,7 +142,7 @@
 - Abstract Factory
     - Characteristics:
         - enables client-independent creation of objects
-        - provides client with interface to classes with different 
+        - provides client with interface to classes with different
         implementations
 - Solution for encapsulating platforms:
     - used for substituting fmaily of concrete products transparently from the client
@@ -159,7 +159,7 @@
 ### Behavioural
 
 - Command
-- Observer 
+- Observer
 - Strategy
 
 
@@ -331,7 +331,7 @@
 1. control creates notification object
 1. notification object notifies user
 
-<!-- good copy of my diagram will go here -->
+![sequence diagram](figs/sequence.png)
 
 #### Activity diagrams
 
@@ -344,7 +344,7 @@
 - end -> black dot with circle around it
     - looks like a target
 
-<!-- good copy of my diagram will go here -->
+![activity diagram](figs/activity.png)
 
 #### State machine diagrams
 
@@ -356,7 +356,7 @@
 - end -> black dot with circle around it
     - looks like a target
 
-<!-- good copy of my diagram will go here -->
+![state machine](figs/state-machine.png)
 
 
 
@@ -393,15 +393,21 @@
 - ball -> provides service
 - socket -> uses service
 
+![component](figs/component.png)
+
 ### Packaging diagrams
 
 - looks like "folders"
 - subsystems inside subsystems
 - inheritance and aggregation (just arrows, no diamonds)
 
+![package](figs/package.png)
+
 ### System design strategies
 
 - TODO: work on me!!
+
+![deployment](figs/deployment.png)
 
 
 
