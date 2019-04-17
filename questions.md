@@ -102,6 +102,69 @@
     - B) I lose, you win
     - C) We both win
     - D) We both lose
+1. Verification and configuration management happens in
+    - a) Fault avoidance
+    - b) Fault detection
+    - c) Fault tolerance
+1. Testing and debugging happens in
+    - a) Fault avoidance
+    - b) Fault detection
+    - c) Fault tolerance
+1. Recovering from faults and failures in terms happens in :
+    - a) Fault avoidance
+    - b) Fault detection
+    - c) Fault tolerance
+1. All of these are types of System Testings except:
+    - a) Functional testing
+    - b) Usability Testing
+    - c) Performance Testing
+    - d) Acceptance Testing
+1. One of these testings is mainly performed by the client:
+    - a) Functional testing
+    - b) Usability Testing
+    - c) Performance Testing
+    - d) Acceptance Testing
+1. \_\_\_\_\_\_\_ simulates the called portion of the code:
+    - a) Test drivers
+    - b) Test stubs
+    - c) Unit Testing
+1. \_\_\_\_\_\_\_\_ testing requires no test stubs:
+    - a) Big bang Testing
+    - b) Path Testing
+    - c) Bottom-Up Testing
+    - d) Polymorphism Testing
+1. \_\_\_\_\_\_\_\_ testing requires no test drivers but MANY test stubs:
+    - a) Big bang Testing
+    - b) Path Testing
+    - c) Top-down Testing
+    - d) Polymorphism Testing
+1. Which system Testing has most of its cases derived from functional requirements?
+    - a) Field Testing
+    - b) Functional Testing
+    - c) Acceptance Testing
+1. System is deemed validated when :
+    - a) functional and acceptance testing has no failures
+    - b) functional and path testing has no failures
+    - c) functional and performance testing has no failures
+1. Containers are type of :
+    - a) implementation inheritance
+    - b) specification inheritance
+    - c) delegation
+1. Two types of contracts associated with an operation:
+    - a) post condition and pre condition
+    - b) pre condition and invariant
+    - c) invariant and post condition
+1. Example of optimizing object model for expensive results like frequently called operations :
+    - a) caching
+    - b) forward engineering
+    - c) reverse engineering
+1. \_\_\_\_\_\_\_ is a solution for optimizing "many" side associations :
+    - a) contracts
+    - b) qualified associations
+1. \_\_\_\_\_\_ is a meta model for data:
+    - a) schema
+    - b) primary key
+    - c) foreign key
 
 ## Short Answer (Concepts)
 
