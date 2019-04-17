@@ -436,7 +436,9 @@
 
 - start -> black dot
 - arrows to activities
-- bars split and join arrows
+- bars split and join arrows for synchronization
+    - fork node
+    - join node
 - diamonds for conditions
 - swim lanes
     - break diagram into related lanes of activity
@@ -557,7 +559,7 @@
     - superclass functionality is reused by:
         - subclassing
         - refining behaviour
-    - quick and dirty way to reuse operations        
+    - quick and dirty way to reuse operations
         - usually results in unintended consequences
         - you get more than you bargained for
     - not an intuitive use of inheritance
@@ -580,12 +582,12 @@
 
 - What is this principle?
     - assume T is a superclass and S is a subclass of T
-    - “if an object of type S can be substituted in all places where an 
+    - “if an object of type S can be substituted in all places where an
     object of type T is expected, then S is a subtype of T”
     - consequences:
-        - an operation on T can be called on instances of S, without 
+        - an operation on T can be called on instances of S, without
         knowing that it is called on a subclass instance
-        - client classes using operations on T don’t have to change when 
+        - client classes using operations on T don’t have to change when
         new subclasses of T are added
 - Strict inheritance
     - when all inheritance associations are specification inheritance
@@ -597,7 +599,7 @@
     - new implementation
         - system performance is difficult to predict at the design stage
     - new views
-        - usability problems translate into additional views on the same 
+        - usability problems translate into additional views on the same
         data
     - new complexity of application domain
         - generalizations may be realized late in development
@@ -641,7 +643,7 @@
     - used to specify consistency constraints among attributes
     - ex:
       - max number of players in tournament must be greater than 0
-      - given a *Tournamnent* object *t: t.getMaxNumPlayers() > 0*  
+      - given a *Tournamnent* object *t: t.getMaxNumPlayers() > 0*
 - avoid constraints that involve many association traversals
     - otherwise we get tighter coupling between unrelated classes
 #### Precondition
@@ -649,7 +651,7 @@
 - What is a precondition
    - predicate that must be true before an operation is invoked
    - associated with an operation
-   - used to specify constraints that class user must meet before invoking the 
+   - used to specify constraints that class user must meet before invoking the
    operation
    - example of precondition for *acceptPlayer()* operation:
       - player must not already be accepted, and the current number of players
@@ -663,7 +665,7 @@
 - What is it?
    - predicate that must be true after an operation executes
    - associated with an operation
-   - used to specify constraints that class implementer and extender must ensure 
+   - used to specify constraints that class implementer and extender must ensure
    after execution
    - example of precondition for *acceptPlayer()* operation:
       - accepting a player must increase the player count by 1

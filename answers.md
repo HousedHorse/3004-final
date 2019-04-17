@@ -13,6 +13,17 @@ FIXME: answers up to 9 are done; need to do the rest
 1. C
 1. B
 1. A
+1. C
+1. C
+1. D
+1. D
+1. B
+1. B
+1. D
+1. A
+1. A
+1. D
+1. D
 
 
 
@@ -193,7 +204,125 @@ parent or each other based on desired behavior.
 ### Question 17
 
 - model transformation
+    - changing some component of a model
+    - only change one component at a time
+    - change it in isolation
+    - verify it after
 - refactoring
+    - changing some component of the source code
+    - only change one component at a time
+    - change it in isolation
+    - verify it after
+
+### Question 18
+
+- forward engineering
+    - writing the code
+- reverse engineering
+    - inferring the model from the code
+
+### Question 19
+
+- relational
+    - advantages?
+        - faster access times (in general)
+    - disadvantages?
+        - mapping can be non-trivial because it's a different paradigm
+        - sacrifices between speed and ease of mapping
+- OO
+    - advantages?
+        - same paradigm as OO programming
+        - that means mapping is a more trivial process
+    - disadvantages?
+        - slower access times (in general)
+
+### Question 20
+
+- vertical mapping
+    - table for parent and table for each child
+    - inheritance mapped through foreign keys to child class table
+    - parent has parent attributes, child has child attributes
+- horizontal mapping
+    - this can only be used if parent is abstract
+    - only subclass has a table
+    - each subclass table has its own copy of parent attributes
+
+### Question 21
+
+- blackbox?
+    - tester does not know about the inner workings of the code
+    - only concerns input and expected vs actual result
+- whitebox?
+    - tester knows about the inner workings of the code
+    - test the inner workings of the component, not just input/output
+- why do we need both?
+    - blackbox only tells us some of the story
+    - we need whitebox too
+
+### Question 22
+
+- we should do polymorphic testing!
+    - type-cast to all three subclasses
+    - test foo and bar in order
+    - make a flow graph
+
+TODO: include good copy of flow graph
+
+### Question 23
+
+- relates to state machine diagram
+- test each transition in the diagram
+    - see if we end up at expected end state each time
+
+### Question 24
+
+- top down
+    - test top layer first
+    - combine subsystems in downward fashion one stage at a time
+    - this requires test stubs
+- bottom up
+    - test lowest layer first
+    - combine subsystems in upward fashion one stage at a time
+    - this requires test drivers
+- sandwich
+    - find target layer
+    - split system into top layer, target layer, bottom layer
+    - test top layer top down with target components
+    - test bottom layer bottom up with target components
+    - testing of top and bottom can happen concurrently
+    - no drivers or stubs
+    - target components not unit tested
+- modified sandwich
+    - find target layer
+    - split system into top layer, target layer, bottom layer
+    - test layers individually
+        - top with stubs for tagret
+        - target with drivers for top, stubs for bottom
+        - bottom with drivers for target
+    - combined layer tests
+    - testing of top and bottom can happen concurrently
+    - additional test drivers and stubs
+
+### Question 25
+
+- waterfall and v-model both sequential
+- both involve rigorous verification, no backtracking
+- v-model organized into levels of abstraction
+    - arrows left to right depict flow of information between components of same abstraction level
+
+### Question 26
+
+- spiral and agile are both good at responding to change
+    - agile is probably better at this
+    - spiral is probably a little better than agile at planning, compensating for risks, costs
+- agile works in sprints, iteratively
+    - short delivery time
+    - responds to change quickly
+- spiral is also iterative, works in stages in a spiral
+    - identify objectives, constraints, alternatives
+    - identify and resolve risks
+    - prototype and verify
+    - plan next round
 
 
 
