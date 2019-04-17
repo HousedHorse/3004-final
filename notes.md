@@ -430,6 +430,8 @@
 1. control creates notification object
 1. notification object notifies user
 
+**IMPORTANT: Please note the below diagram has a mistake!! The microwave actor should not be destroyed!!**
+
 ![sequence diagram](figs/sequence.png)
 
 #### Activity diagrams

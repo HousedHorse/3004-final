@@ -165,7 +165,7 @@ Assistant Chefs can do the following:
 
 Chefs can do the following:
 
-- everything cooks can do
+- everything assistant chefs can do
 - browse recipes on other peer hosts
 - download recipes from other hosts
 
