@@ -2,7 +2,7 @@
 
 ## Multiple Choice (Concepts)
 
-FIXME: answers up to 9 are done; need to do the rest
+FIXME: answers up to 20 are done; need to do the rest
 
 1. B (and probably D as well)
 1. C
