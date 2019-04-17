@@ -930,35 +930,37 @@
 
 #### Top-down
 
-- needs stubs, not drivers
-- test top level subsystems
-- then, integrate with lower subsystems and test them all combined
-- repeat
+- test top layer first
+- combine subsystems in downward fashion one stage at a time
+- this requires test stubs
 
 #### Bottom-up
 
-- needs drivers, not stubs
-- test bottom level subsystems
-- then, integrate with level above and test them all combined
-- repeat
+- test lowest layer first
+- combine subsystems in upward fashion one stage at a time
+- this requires test drivers
 
 #### Sandwich
 
-- combine bottom-up and top-down
-- take three layers
-    - target
-    - layer above
-    - layer below
-- run top down from layer above
-- run bottom-up from layer below
-- target components are not unit tested
+- find target layer
+- split system into top layer, target layer, bottom layer
+- test top layer top down with target components
+- test bottom layer bottom up with target components
+- testing of top and bottom can happen concurrently
+- no drivers or stubs
+- target components not unit tested
 
-#### Modified sandwich
+#### Modified Sandwich
 
-- similar to sandwich
-- test *all three* layers individually
-- then test them all together
-- requires more test drivers and stubs
+- find target layer
+- split system into top layer, target layer, bottom layer
+- test layers individually
+    - top with stubs for tagret
+    - target with drivers for top, stubs for bottom
+    - bottom with drivers for target
+- combined layer tests
+- testing of top and bottom can happen concurrently
+- additional test drivers and stubs
 
 #### Test stubs
 
