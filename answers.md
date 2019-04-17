@@ -354,4 +354,55 @@ TODO: include good copy of flow graph
 
 ## Short Answer (Ethics)
 
-1.
+### Question 1
+
+#### Identify Stakeholders (at least 3)
+
+- me
+    - if I do it, earn boss' favor
+    - if I don't do it, could get in trouble with boss
+    - I have a legal right to object...
+    - but... legal action could be expensive and time consuming
+    - if I do it, a violation of ACM ethics code (responsibility to client, public) because it's a violation of user trust
+    - exposing boss to higher-ups could be a violation of my ethical duty to him as a colleague
+- my boss
+    - stands to make a lot of money for the company
+    - could earn a promotion due to financial performance of the application
+    - perhaps he is only thinking about the short term benefits
+    - long term costs include him losing his job if it gets out
+- the company
+    - short term financial benefit but...
+    - ... good corporate governance would probably not be in favor of such reckless action
+    - they probably stand to benefit by being made aware of the situation
+- the end user
+    - they have a right to know what their application is doing
+    - they don't want to use software if it contains malware
+    - they probably don't want to use an application that takes too many system resources
+    - since the app is in the financial/personal information space, it is important they use an application they know they can trust
+
+#### Identify All Possible Courses of Action
+
+1. Try to explain to the boss why what he is doing is risky/immoral
+1. Go over boss's head to higher-ups in company
+1. Combine option 1 and 2
+1. Don't do it and suffer the boss's wrath
+1. Act as a whistleblower and expose what is being planned
+1. Go forward with the boss's plan
+
+#### Consider Impact of Each Course of Action
+
+1. Ethically acceptable
+1. Ethically acceptable
+1. Ethically acceptable
+1. Ethically acceptable
+1. Ethically prohibited
+1. Ethically prohibited
+
+#### Choose Best Option
+
+- option 3 is probably the best option
+- if he refuses to see reason, I can always go the employer
+    - this will allow me to meet my ethical duty to client and employer
+    - since I gave my boss a chance to come clean, I met my ethical duty to colleagues as well
+- by promoting good software management, I promote ethical management and fulfill my ethical duty to my profession
+- taking the experience as a learning experience fulfills my ethical duty to self
